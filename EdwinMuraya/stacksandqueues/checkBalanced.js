@@ -1,18 +1,15 @@
 const Stack = require("./stack");
 // Examples To understand the Problem
-const a = checkBalanced("[[[]]]"); // true
-const b = checkBalanced("[([({})])]"); // true
-const c = checkBalanced("[({]})]"); // false
-const d = checkBalanced("{[(])}"); // false
-
-
 // Assumption
 // The input string only contain {[()]}
-
 // Note
 // A bracket is not balanced if the set of brackets it encloses are not matched.
 
 
+const a = checkBalanced("[[[]]]"); // true
+const b = checkBalanced("[([({})])]"); // true
+const c = checkBalanced("[({]})]"); // false
+const d = checkBalanced("{[(])}"); // false
 // pseudocode
 // create a stack of length of input string
 // for every char in the string
@@ -47,7 +44,6 @@ function checkBalanced(str) {
     return true;
 }
 
-console.log("true", a);
 console.log("true", b);
 console.log("false", c);
 console.log("false", d);
