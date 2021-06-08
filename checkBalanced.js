@@ -9,3 +9,11 @@
 //    The pair of square brackets encloses a single, 
 //    unbalanced opening bracket, (, and the pair of parentheses
 //      encloses a single, unbalanced closing square bracket
+
+// By this logic, we say a sequence of brackets is balanced 
+// if the following conditions are met:
+
+// It contains no unmatched brackets.
+// The subset of brackets enclosed within the confines of
+//  a matched pair of brackets 
+// is also a matched pair of brackets.
