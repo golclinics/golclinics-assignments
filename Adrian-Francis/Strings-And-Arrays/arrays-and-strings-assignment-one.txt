@@ -1,0 +1,8 @@
+Done by: Adrian Francis Nduva
+
+1. Reverse an array in place:
+https://github.com/Psycadelik/DSA-GoL/blob/main/arrays/Python/reverse.py
+
+2. Reverse a sentence:
+https://github.com/Psycadelik/DSA-GoL/blob/main/arrays/Python/reverse_sentence.py
+
