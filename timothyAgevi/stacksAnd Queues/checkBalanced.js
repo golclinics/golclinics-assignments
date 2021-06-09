@@ -23,7 +23,7 @@
 //   If a string is balanced,
 //  return YES. Otherwise, return NO.
 
-const checkBalancedParantheses = (exp) => {
+const checkBalanced = (exp) => {
     const stack = []
 
     for (let i = 0; i < exp.length; i++) {
@@ -50,4 +50,4 @@ const checkBalancedParantheses = (exp) => {
     if (stack.length === 0)  return true; return false;
 }
 
-checkBalancedParantheses('{[]()}')
+checkBalanced('{[]()}')
