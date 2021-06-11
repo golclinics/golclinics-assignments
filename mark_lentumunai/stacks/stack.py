@@ -19,7 +19,7 @@ class Stack:
             print("stack overflow, adding some space for extra element(s)")
             self.handle_full_capacity()
         self.top += 1
-        self.arr[self.top] = value
+        self.arr[self.num_of_elements] = value
         self.num_of_elements += 1
 
     def handle_full_capacity(self):
