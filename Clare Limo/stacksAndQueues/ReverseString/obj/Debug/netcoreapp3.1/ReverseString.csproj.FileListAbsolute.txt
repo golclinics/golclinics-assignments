@@ -1,0 +1,13 @@
+/home/moringa/Documents/GolClinics/golclinics-assignments/Clare Limo/stacksAndQueues/ReverseString/bin/Debug/netcoreapp3.1/ReverseString
+/home/moringa/Documents/GolClinics/golclinics-assignments/Clare Limo/stacksAndQueues/ReverseString/bin/Debug/netcoreapp3.1/ReverseString.deps.json
+/home/moringa/Documents/GolClinics/golclinics-assignments/Clare Limo/stacksAndQueues/ReverseString/bin/Debug/netcoreapp3.1/ReverseString.runtimeconfig.json
+/home/moringa/Documents/GolClinics/golclinics-assignments/Clare Limo/stacksAndQueues/ReverseString/bin/Debug/netcoreapp3.1/ReverseString.runtimeconfig.dev.json
+/home/moringa/Documents/GolClinics/golclinics-assignments/Clare Limo/stacksAndQueues/ReverseString/bin/Debug/netcoreapp3.1/ReverseString.dll
+/home/moringa/Documents/GolClinics/golclinics-assignments/Clare Limo/stacksAndQueues/ReverseString/bin/Debug/netcoreapp3.1/ReverseString.pdb
+/home/moringa/Documents/GolClinics/golclinics-assignments/Clare Limo/stacksAndQueues/ReverseString/obj/Debug/netcoreapp3.1/ReverseString.csprojAssemblyReference.cache
+/home/moringa/Documents/GolClinics/golclinics-assignments/Clare Limo/stacksAndQueues/ReverseString/obj/Debug/netcoreapp3.1/ReverseString.AssemblyInfoInputs.cache
+/home/moringa/Documents/GolClinics/golclinics-assignments/Clare Limo/stacksAndQueues/ReverseString/obj/Debug/netcoreapp3.1/ReverseString.AssemblyInfo.cs
+/home/moringa/Documents/GolClinics/golclinics-assignments/Clare Limo/stacksAndQueues/ReverseString/obj/Debug/netcoreapp3.1/ReverseString.csproj.CoreCompileInputs.cache
+/home/moringa/Documents/GolClinics/golclinics-assignments/Clare Limo/stacksAndQueues/ReverseString/obj/Debug/netcoreapp3.1/ReverseString.dll
+/home/moringa/Documents/GolClinics/golclinics-assignments/Clare Limo/stacksAndQueues/ReverseString/obj/Debug/netcoreapp3.1/ReverseString.pdb
+/home/moringa/Documents/GolClinics/golclinics-assignments/Clare Limo/stacksAndQueues/ReverseString/obj/Debug/netcoreapp3.1/ReverseString.genruntimeconfig.cache
