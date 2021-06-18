@@ -1,0 +1,13 @@
+/home/moringa/Documents/GolClinics/golclinics-assignments/Clare Limo/Searching/2Nums/bin/Debug/netcoreapp3.1/2Nums
+/home/moringa/Documents/GolClinics/golclinics-assignments/Clare Limo/Searching/2Nums/bin/Debug/netcoreapp3.1/2Nums.deps.json
+/home/moringa/Documents/GolClinics/golclinics-assignments/Clare Limo/Searching/2Nums/bin/Debug/netcoreapp3.1/2Nums.runtimeconfig.json
+/home/moringa/Documents/GolClinics/golclinics-assignments/Clare Limo/Searching/2Nums/bin/Debug/netcoreapp3.1/2Nums.runtimeconfig.dev.json
+/home/moringa/Documents/GolClinics/golclinics-assignments/Clare Limo/Searching/2Nums/bin/Debug/netcoreapp3.1/2Nums.dll
+/home/moringa/Documents/GolClinics/golclinics-assignments/Clare Limo/Searching/2Nums/bin/Debug/netcoreapp3.1/2Nums.pdb
+/home/moringa/Documents/GolClinics/golclinics-assignments/Clare Limo/Searching/2Nums/obj/Debug/netcoreapp3.1/2Nums.csprojAssemblyReference.cache
+/home/moringa/Documents/GolClinics/golclinics-assignments/Clare Limo/Searching/2Nums/obj/Debug/netcoreapp3.1/2Nums.AssemblyInfoInputs.cache
+/home/moringa/Documents/GolClinics/golclinics-assignments/Clare Limo/Searching/2Nums/obj/Debug/netcoreapp3.1/2Nums.AssemblyInfo.cs
+/home/moringa/Documents/GolClinics/golclinics-assignments/Clare Limo/Searching/2Nums/obj/Debug/netcoreapp3.1/2Nums.csproj.CoreCompileInputs.cache
+/home/moringa/Documents/GolClinics/golclinics-assignments/Clare Limo/Searching/2Nums/obj/Debug/netcoreapp3.1/2Nums.dll
+/home/moringa/Documents/GolClinics/golclinics-assignments/Clare Limo/Searching/2Nums/obj/Debug/netcoreapp3.1/2Nums.pdb
+/home/moringa/Documents/GolClinics/golclinics-assignments/Clare Limo/Searching/2Nums/obj/Debug/netcoreapp3.1/2Nums.genruntimeconfig.cache
