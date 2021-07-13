@@ -1,0 +1,13 @@
+C:\Users\Abby\Documents\GitHub\golclinics-assignments\Caleb Kimani\Arrays_and_Strings\Arrays_and_Strings\bin\Debug\netcoreapp3.1\Arrays_and_Strings.exe
+C:\Users\Abby\Documents\GitHub\golclinics-assignments\Caleb Kimani\Arrays_and_Strings\Arrays_and_Strings\bin\Debug\netcoreapp3.1\Arrays_and_Strings.deps.json
+C:\Users\Abby\Documents\GitHub\golclinics-assignments\Caleb Kimani\Arrays_and_Strings\Arrays_and_Strings\bin\Debug\netcoreapp3.1\Arrays_and_Strings.runtimeconfig.json
+C:\Users\Abby\Documents\GitHub\golclinics-assignments\Caleb Kimani\Arrays_and_Strings\Arrays_and_Strings\bin\Debug\netcoreapp3.1\Arrays_and_Strings.runtimeconfig.dev.json
+C:\Users\Abby\Documents\GitHub\golclinics-assignments\Caleb Kimani\Arrays_and_Strings\Arrays_and_Strings\bin\Debug\netcoreapp3.1\Arrays_and_Strings.dll
+C:\Users\Abby\Documents\GitHub\golclinics-assignments\Caleb Kimani\Arrays_and_Strings\Arrays_and_Strings\bin\Debug\netcoreapp3.1\Arrays_and_Strings.pdb
+C:\Users\Abby\Documents\GitHub\golclinics-assignments\Caleb Kimani\Arrays_and_Strings\Arrays_and_Strings\obj\Debug\netcoreapp3.1\Arrays_and_Strings.csproj.AssemblyReference.cache
+C:\Users\Abby\Documents\GitHub\golclinics-assignments\Caleb Kimani\Arrays_and_Strings\Arrays_and_Strings\obj\Debug\netcoreapp3.1\Arrays_and_Strings.AssemblyInfoInputs.cache
+C:\Users\Abby\Documents\GitHub\golclinics-assignments\Caleb Kimani\Arrays_and_Strings\Arrays_and_Strings\obj\Debug\netcoreapp3.1\Arrays_and_Strings.AssemblyInfo.cs
+C:\Users\Abby\Documents\GitHub\golclinics-assignments\Caleb Kimani\Arrays_and_Strings\Arrays_and_Strings\obj\Debug\netcoreapp3.1\Arrays_and_Strings.csproj.CoreCompileInputs.cache
+C:\Users\Abby\Documents\GitHub\golclinics-assignments\Caleb Kimani\Arrays_and_Strings\Arrays_and_Strings\obj\Debug\netcoreapp3.1\Arrays_and_Strings.dll
+C:\Users\Abby\Documents\GitHub\golclinics-assignments\Caleb Kimani\Arrays_and_Strings\Arrays_and_Strings\obj\Debug\netcoreapp3.1\Arrays_and_Strings.pdb
+C:\Users\Abby\Documents\GitHub\golclinics-assignments\Caleb Kimani\Arrays_and_Strings\Arrays_and_Strings\obj\Debug\netcoreapp3.1\Arrays_and_Strings.genruntimeconfig.cache
