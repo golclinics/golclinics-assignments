@@ -22,12 +22,8 @@ namespace Searching
                 for (int j = 1; j < arr.Length - 1; j++)
                 {
                     if ((indexs[i] + indexs[j] == target) || target == indexs[i])
-                    { 
-                        int index1 = indexs[i];
-
-                        int index2 = indexs[j];
-
-                        return new KeyValuePair<int, int>(index1, index2);
+                    {
+                        return new KeyValuePair<int, int>(i, j);
                     }
 
                 }

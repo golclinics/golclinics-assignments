@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Abby\\Documents\\GitHub\\golclinics-assignments\\Caleb Kimani\\Searching\\Searching\\Searching.csproj": {}
+    "C:\\Users\\v-cakima.REDMOND\\Documents\\GitHub\\golclinics-assignments\\Caleb Kimani\\Searching\\Searching\\Searching.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Abby\\Documents\\GitHub\\golclinics-assignments\\Caleb Kimani\\Searching\\Searching\\Searching.csproj": {
+    "C:\\Users\\v-cakima.REDMOND\\Documents\\GitHub\\golclinics-assignments\\Caleb Kimani\\Searching\\Searching\\Searching.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Abby\\Documents\\GitHub\\golclinics-assignments\\Caleb Kimani\\Searching\\Searching\\Searching.csproj",
+        "projectUniqueName": "C:\\Users\\v-cakima.REDMOND\\Documents\\GitHub\\golclinics-assignments\\Caleb Kimani\\Searching\\Searching\\Searching.csproj",
         "projectName": "Searching",
-        "projectPath": "C:\\Users\\Abby\\Documents\\GitHub\\golclinics-assignments\\Caleb Kimani\\Searching\\Searching\\Searching.csproj",
-        "packagesPath": "C:\\Users\\Abby\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Abby\\Documents\\GitHub\\golclinics-assignments\\Caleb Kimani\\Searching\\Searching\\obj\\",
+        "projectPath": "C:\\Users\\v-cakima.REDMOND\\Documents\\GitHub\\golclinics-assignments\\Caleb Kimani\\Searching\\Searching\\Searching.csproj",
+        "packagesPath": "C:\\Users\\v-cakima.REDMOND\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\v-cakima.REDMOND\\Documents\\GitHub\\golclinics-assignments\\Caleb Kimani\\Searching\\Searching\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Abby\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\v-cakima.REDMOND\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -54,7 +54,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.301\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.205\\RuntimeIdentifierGraph.json"
         }
       }
     }
