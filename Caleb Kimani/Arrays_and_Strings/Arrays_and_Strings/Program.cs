@@ -20,11 +20,12 @@ namespace Arrays_Gol
 
         }
 
-        private static string swapsen(char[] input1)
+        private static string swapsen(char[] input)
         {
-            char[] input = "dog world car life".ToCharArray();
+            
             for (int i = 0; i < input.Length / 2; i++)
-            {//reverse the expression
+            {
+                //reverse the expression
                 char tmp = input[i];
                 input[i] = input[input.Length - i - 1];
                 input[input.Length - i - 1] = tmp;
@@ -48,7 +49,8 @@ namespace Arrays_Gol
             return new string(input);
         }
 
-        //hackerank implementation
+        /* You are given an unordered array consisting of consecutive integers  [1, 2, 3, ..., n] without any duplicates. 
+         * You are allowed to swap any two elements. Find the minimum number of swaps required to sort the array in ascending order. */
         static int minimumSwaps(int[] arr)
         {
             int count = 0;
@@ -74,6 +76,7 @@ namespace Arrays_Gol
             }
             return count;
 
+
         }
 
         /* Functions counts the number of times the input number n can be divided by 2 before it reaches one or less. */
@@ -92,37 +95,42 @@ namespace Arrays_Gol
         }
         public static void Main()
         {
-            long num = 1152921504606846976;
+            
+            long num = 60;
+
+            Console.WriteLine("///////////////////////////////////////////////////////// \n");
+
+            Console.WriteLine("Functions counts the number of times the input number : " + num +" can be divided by 2 before it reaches one or less.");
 
             Console.WriteLine("Number of"
-                          + " digits : " + count_div_2(num));
+                          + " times : " + count_div_2(num));
 
-            Console.ReadLine();
-
-
-            /*
-             * 
-            int[] array = { 2, 4, 6, 8 };
+            Console.WriteLine("///////////////////////////////////////////////////////// \n");
 
             string word = "This is a Boy";
 
-            swap(array);
+            Console.WriteLine("Function that swaps sentence below without swapping the words : "+word);
 
             char[] str2 = word.ToCharArray();
 
             string new_str = swapsen(str2);
 
-            int num2 = count_div_2(100);
-
-            Console.WriteLine(String.Join(',', array));
-
             Console.WriteLine(new_str);
 
-            Console.WriteLine(num2);
+            Console.WriteLine("///////////////////////////////////////////////////////// \n");
 
-            Console.ReadLine(); */
+            int[] array = new int[]{ 7 , 1 , 3 , 2, 4, 5, 6 };
 
-            //Console.WriteLine(count_div_2(100));
+            Console.WriteLine("Unordered array is : " + string.Join(",", array));
+
+            int count = minimumSwaps(array);
+
+            Console.WriteLine("number of swaps to sort the array: " + count);
+
+            Console.ReadLine();
+
+
+            
         }
 
     }
