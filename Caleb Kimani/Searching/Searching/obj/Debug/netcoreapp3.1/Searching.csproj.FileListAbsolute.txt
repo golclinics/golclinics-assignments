@@ -1,0 +1,13 @@
+C:\Users\Abby\Documents\GitHub\golclinics-assignments\Caleb Kimani\Searching\Searching\bin\Debug\netcoreapp3.1\Searching.exe
+C:\Users\Abby\Documents\GitHub\golclinics-assignments\Caleb Kimani\Searching\Searching\bin\Debug\netcoreapp3.1\Searching.deps.json
+C:\Users\Abby\Documents\GitHub\golclinics-assignments\Caleb Kimani\Searching\Searching\bin\Debug\netcoreapp3.1\Searching.runtimeconfig.json
+C:\Users\Abby\Documents\GitHub\golclinics-assignments\Caleb Kimani\Searching\Searching\bin\Debug\netcoreapp3.1\Searching.runtimeconfig.dev.json
+C:\Users\Abby\Documents\GitHub\golclinics-assignments\Caleb Kimani\Searching\Searching\bin\Debug\netcoreapp3.1\Searching.dll
+C:\Users\Abby\Documents\GitHub\golclinics-assignments\Caleb Kimani\Searching\Searching\bin\Debug\netcoreapp3.1\Searching.pdb
+C:\Users\Abby\Documents\GitHub\golclinics-assignments\Caleb Kimani\Searching\Searching\obj\Debug\netcoreapp3.1\Searching.csproj.AssemblyReference.cache
+C:\Users\Abby\Documents\GitHub\golclinics-assignments\Caleb Kimani\Searching\Searching\obj\Debug\netcoreapp3.1\Searching.AssemblyInfoInputs.cache
+C:\Users\Abby\Documents\GitHub\golclinics-assignments\Caleb Kimani\Searching\Searching\obj\Debug\netcoreapp3.1\Searching.AssemblyInfo.cs
+C:\Users\Abby\Documents\GitHub\golclinics-assignments\Caleb Kimani\Searching\Searching\obj\Debug\netcoreapp3.1\Searching.csproj.CoreCompileInputs.cache
+C:\Users\Abby\Documents\GitHub\golclinics-assignments\Caleb Kimani\Searching\Searching\obj\Debug\netcoreapp3.1\Searching.dll
+C:\Users\Abby\Documents\GitHub\golclinics-assignments\Caleb Kimani\Searching\Searching\obj\Debug\netcoreapp3.1\Searching.pdb
+C:\Users\Abby\Documents\GitHub\golclinics-assignments\Caleb Kimani\Searching\Searching\obj\Debug\netcoreapp3.1\Searching.genruntimeconfig.cache
