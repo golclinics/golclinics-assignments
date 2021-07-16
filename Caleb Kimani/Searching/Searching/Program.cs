@@ -6,6 +6,35 @@ using System.Linq;
 namespace Searching
 {
 
+    class Grade
+    {
+        int start;
+
+        int to;
+
+        char gradename;
+        public Grade(int start, int to, char gradename)
+        {
+            this.start = start;
+            this.to = to;
+            this.gradename = gradename;
+
+        }
+    }
+
+    class Student
+    {
+        string name;
+
+        int marks;
+        public Student(string name, int marks)
+        {
+            this.name = name;
+
+            this.marks = marks;
+        }
+    }
+
     class Program
     {
         /*Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.//
@@ -66,6 +95,8 @@ namespace Searching
 
             return pairs;
         }
+
+
         
         static void Main(string[] args)
         {
@@ -94,7 +125,15 @@ namespace Searching
 
             Console.WriteLine(pairs1);
 
+            Grade mygrades = new Grade(90, 100 ,'A');
+            Grade mygrades2 = new Grade(80, 89, 'B');
+            Grade mygrades3 = new Grade(70, 79, 'C');
+            Grade mygrades4 = new Grade(60, 69, 'D');
+            Grade mygrades5 = new Grade(0, 59, 'E');
+
             Console.ReadLine();
         }
     }
+
+
 }
