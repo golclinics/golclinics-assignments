@@ -5,38 +5,73 @@ using System.Linq;
 
 namespace Searching
 {
-
-    class Grade
+    public class Student
     {
-        int start;
+        public string name;
 
-        int to;
+        public int marks;
 
-        char gradename;
-        public Grade(int start, int to, char gradename)
-        {
-            this.start = start;
-            this.to = to;
-            this.gradename = gradename;
-
-        }
-    }
-
-    class Student
-    {
-        string name;
-
-        int marks;
         public Student(string name, int marks)
         {
             this.name = name;
-
             this.marks = marks;
+
         }
+
+
     }
+    /// <summary>
+    /// A class representing a subject Grade as below:
+    /// <list type="params">
+    /// <item>
+    /// <description>start</description>
+    /// </item>
+    /// <item>
+    /// <description>to</description>
+    /// </item>
+    /// </list>
+    /// <param name="start">represent the lower bound of grade value</param>
+    /// <param name="to">represent the higher bound range</param>
+    /// <param name="gradename">char representation of grade on the range</param>
+    /// </summary>
+
+    public class Grade
+    {
+        static int start;
+
+        static int to;
+
+        static char gradename;
+
+        public Grade(int start, int to, char gradename)
+        {
+
+            //this.start = start;
+            //this.to = to;
+            //this.gradename = gradename;
+
+        }
+        
+    }
+
 
     class Program
     {
+        public String super_student(Student[] students, Grade[] grades)
+        {
+            
+
+            for(int i=0; i < students.Length; i++)
+            {
+                if (grading(students[i].marks) == 'A' || grading(students[i].marks) == 'B')
+                {
+                    Console.WriteLine( students[i].name);
+                }
+                
+            }
+
+            return "Not Found";
+        }
         /*Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.//
          Assumption : You may assume that each input would have exactly one solution, and you may not use the same element twice.
 
@@ -96,8 +131,37 @@ namespace Searching
             return pairs;
         }
 
+        public static char grading(int marks)
+        {
 
-        
+            if (marks >= 0 && marks < 59)
+            {
+                return 'E';
+
+            }
+            else if (marks >= 60 && marks <= 69)
+            {
+                return 'D';
+
+            }
+            else if (marks >= 70 && marks <= 79)
+            {
+                return 'C';
+            }
+            else if (marks >= 80 && marks <= 89)
+            {
+                return 'B';
+            }
+            else if (marks >= 90 && marks <= 100)
+            {
+                return 'A';
+            }
+
+            return 'Z';
+        }
+
+
+
         static void Main(string[] args)
         {
             Console.WriteLine(" --------------------------------------------------------------------------------------------------------- \n");
@@ -125,15 +189,25 @@ namespace Searching
 
             Console.WriteLine(pairs1);
 
-            Grade mygrades = new Grade(90, 100 ,'A');
-            Grade mygrades2 = new Grade(80, 89, 'B');
-            Grade mygrades3 = new Grade(70, 79, 'C');
-            Grade mygrades4 = new Grade(60, 69, 'D');
-            Grade mygrades5 = new Grade(0, 59, 'E');
+            Console.WriteLine(" --------------------------------------------------------------------------------------------------------- \n");
+
+
+
+            Grade[] grades = new Grade[] { new Grade(90, 100, 'A'), new Grade(80, 89, 'B'), new Grade(70, 79, 'C'), new Grade(60, 69, 'D'), new Grade(0, 59, 'E') };
+
+            Student[] students = new Student[] { new Student("Dennis", 44), new Student("Ken", 90), new Student("Derick", 32), new Student("James", 67), new Student("Joyce", 76),
+                                    new Student("Linet", 29),new Student("Ben", 96),new Student("Jane", 82)};
+
+
+            Program prg = new Program();
+
+            string res = prg.super_student(students, grades);
+
+            Console.WriteLine(res);
+
+            
 
             Console.ReadLine();
         }
     }
-
-
 }
