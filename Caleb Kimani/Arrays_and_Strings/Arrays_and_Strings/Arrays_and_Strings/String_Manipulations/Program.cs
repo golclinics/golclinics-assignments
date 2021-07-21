@@ -54,6 +54,36 @@ namespace String_Manipulations
 
 
         }
+        /* Implementing above solution using an array */
+        public static int makeAnagramb(string a, string b)
+        {
+
+            int[] charValues = new int[26];
+
+            foreach (char c in a)
+            {
+                int cVal = (int)c - 97;
+
+                charValues[cVal]++;
+
+            }
+            foreach (char c in b)
+            {
+                int cVal = (int)c - 97;
+
+                charValues[cVal]--;
+            }
+
+            int deletions = 0;
+
+            foreach (int i in charValues)
+            {
+                deletions += Math.Abs(i);
+            }
+
+            return deletions;
+
+        }
         static void Main(string[] args)
         {
 
@@ -69,9 +99,11 @@ namespace String_Manipulations
 
 
 
-            Console.WriteLine("Number of deletions required to make string a and string b an anagram are : " + makeAnagram(a,b));
+            Console.WriteLine("Number of deletions required to make string A and string B an anagram are : " + makeAnagram(a,b) + "\n");
 
-            
+            Console.WriteLine("Number of deletions required to make string A and string B an anagram are : " + makeAnagramb(a, b));
+
+
         }
     }
 }
