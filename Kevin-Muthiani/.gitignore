@@ -1,3 +1,17 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Java
+.mtj.tmp/
+*.class
+*.jar
+*.war
+*.ear
+*.nar
+hs_err_pid*
+
 # Images
 images/
 *.png
@@ -10,6 +24,11 @@ images/
 env/
 venv/
 ENV/
+
+# IDEs
+.vscode/
+.code-workspace
+.idea/
 
 # Others
 Uploads/
