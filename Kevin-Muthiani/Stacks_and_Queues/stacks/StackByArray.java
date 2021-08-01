@@ -1,4 +1,4 @@
-
+package stacks;
 
 import java.util.Arrays;
 
@@ -24,14 +24,15 @@ public class StackByArray {
 	}
 
 	public static void push(int value) {
-		// Double stck size first if stack is full
+		// Double stack size first if stack is full
 		if (stackIsFull()) {
+			// Approach 1 - Using loop
 			// int[] newStack = new int[stackSize*2];
 			// for (var i = 0; i < stackSize; i++) {
 			// 	newStack[i] = stack[i];
 			// }
 
-			// Using in-built Arrays.copyOf()
+			// Approach 2 - Using in-built Arrays.copyOf()
 			int[] newStack = Arrays.copyOf(stack, stackSize*2);
 
 			stack = newStack;

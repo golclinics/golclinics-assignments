@@ -12,6 +12,9 @@ __pycache__/
 *.nar
 hs_err_pid*
 
+# C#
+*.exe
+
 # Images
 images/
 *.png
