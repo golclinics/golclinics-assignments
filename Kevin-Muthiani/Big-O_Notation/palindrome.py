@@ -50,7 +50,7 @@ print("is_palindrome_recur time:", result)
 
 
 # Results
-# is_palindrome time: 0.06365470399032347       (Third)
-# is_palindrome_rev time: 0.001675348001299426  (Fastest)
-# is_palindrome_rev2 time: 0.020367163000628352 (Second)
-# is_palindrome_recur time: 0.20897671399870887 (Slowest)
+# is_palindrome time: 0.07176800700017338       (Third)
+# is_palindrome_rev time: 0.0014009719998284709 (Fastest)
+# is_palindrome_rev2 time: 0.030794706999586197 (Second)
+# is_palindrome_recur time: 0.1671632799998406  (Slowest)
