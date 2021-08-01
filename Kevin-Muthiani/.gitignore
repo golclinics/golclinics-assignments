@@ -10,3 +10,6 @@ images/
 env/
 venv/
 ENV/
+
+# Others
+Uploads/
