@@ -1,32 +1,8 @@
-# Byte-compiled / optimized / DLL files
-__pycache__/
-*.py[cod]
-*$py.class
-
 # Java
-.mtj.tmp/
 *.class
-*.jar
-*.war
-*.ear
-*.nar
-hs_err_pid*
 
 # C#
 *.exe
-
-# Images
-images/
-*.png
-*.jpeg
-*.jpg
-
-# Environments
-.env
-.venv
-env/
-venv/
-ENV/
 
 # IDEs
 .vscode/
