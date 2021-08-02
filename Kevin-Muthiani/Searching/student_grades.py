@@ -17,9 +17,7 @@ class Student:
         self.marks = marks
 
 
-def super_students(students: List[Student], grades: List[Grade]) -> List[str]:
-
-    def has_required_grade(student: Student, valid_grades: List[Grade]) -> bool:
+def has_required_grade(student: Student, valid_grades: List[Grade]) -> bool:
         """ Helper function to check if student has a valid grade """
 
         for grade in valid_grades:
@@ -28,12 +26,13 @@ def super_students(students: List[Student], grades: List[Grade]) -> List[str]:
         return False
 
 
+def super_students(students: List[Student], grades: List[Grade]) -> List[str]:
     valid_grades = [ grade for grade in grades if (grade.grade_name in ["A", "B"] )]
     valid_students = []
 
     for student in students:
         if has_required_grade(student, valid_grades):
-            valid_students.append(student)
+            valid_students.append(student.name)
 
     return valid_students
 
@@ -59,7 +58,5 @@ students = [
   Student("Jane", 82)
 ]
 
-super_students_list = super_students(students, grades)
-
-for student in super_students_list:
-    print(student.name, " - ", student.marks)
+# Test
+print(super_students(students, grades))
