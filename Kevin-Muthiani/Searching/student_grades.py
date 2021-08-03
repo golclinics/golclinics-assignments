@@ -17,21 +17,25 @@ class Student:
         self.marks = marks
 
 
-def has_required_grade(student: Student, valid_grades: List[Grade]) -> bool:
-        """ Helper function to check if student has a valid grade """
+# Time - O(m), Space - O(1); Where m = number of super grades
+def has_super_grade(student: Student, super_grades: List[Grade]) -> bool:
+    """
+    Helper function to check if student has a super grade
+    """
 
-        for grade in valid_grades:
-            if (student.marks >= grade.start) and (student.marks <= grade.to):
-                return True
-        return False
+    for grade in super_grades:
+        if (student.marks >= grade.start) and (student.marks <= grade.to):
+            return True
+    return False
 
 
+# Time - O(m + m*n), Space - O(m + n); Where m = size of grades & n = size of students
 def super_students(students: List[Student], grades: List[Grade]) -> List[str]:
-    valid_grades = [ grade for grade in grades if (grade.grade_name in ["A", "B"] )]
+    super_grades = [ grade for grade in grades if (grade.grade_name in ["A", "B"] )]
     valid_students = []
 
     for student in students:
-        if has_required_grade(student, valid_grades):
+        if has_super_grade(student, super_grades):
             valid_students.append(student.name)
 
     return valid_students
