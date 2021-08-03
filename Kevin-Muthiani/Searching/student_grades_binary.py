@@ -47,12 +47,12 @@ def last_super_student_index(students, super_grades, first, last):
 
     if has_super_grade(mid_student, super_grades):
         # All students on right side (including middle one) have super grades.
-        # Record current index as minimum and check if there are others on left hand side
+        # Record current index as minimum and check if there are others on left side
         minimum = mid
         last = mid - 1
     else:
         # All students on left side (including middle one) lack super grades.
-        # Check the right hand side
+        # Check the right side
         first = mid + 1
 
     new_minimum = last_super_student_index(students, super_grades, first, last)
