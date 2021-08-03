@@ -59,7 +59,7 @@ def last_super_student_index(students, super_grades, first, last):
     return new_minimum if (new_minimum != -1) else minimum
 
 
-# Time - O(m + m*log(n) + n), Space - O(1); Where m = size of grades & n = size of students
+# Time - O(m + n+ m*log(n)), Space - O(m + n + log(n)); Where m = size of grades & n = size of students
 def super_students(students: List[Student], grades: List[Grade]) -> List[str]:
     first_index = 0
     last_index = len(students) - 1
