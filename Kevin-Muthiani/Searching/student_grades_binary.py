@@ -27,7 +27,6 @@ def has_super_grade(student: Student, super_grades: List[Grade]) -> bool:
 
 
 # Time - O(m*log(n)), Space - O(log(n)); Where m = size of super_grades & n = size of students
-# Iterative Solution
 def last_super_student_index(students, super_grades, first, last):
     """
     Helper function that iteratively determines index of last student that had a super grade
