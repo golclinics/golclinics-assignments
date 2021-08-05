@@ -1,0 +1,7 @@
+Please use the link below to access the assignemt instructions on GitHub
+https://github.com/golclinics/golclinics-dsa/blob/main/assignments/02-big-o-algo-analysis-2.md
+
+Submission instructions
+Attempt the assignment and attach screenshots of your solutions on a word document 
+Share a link to you solution on github
+Upload the word document (Your full name should be the name of the file) as your submission before the set deadline
