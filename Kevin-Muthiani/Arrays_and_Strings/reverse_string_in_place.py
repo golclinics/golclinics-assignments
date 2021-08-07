@@ -17,16 +17,29 @@ def reverseSentence(sentence):
 
     # Reverse all elements (characters) of array
     reverseArray(sentence, first_index, n)
-    
+
     # Reverse all but last word
     for i in range(n):
         if sentence[i] == ' ':
             last_index = i
             reverseArray(sentence, first_index, last_index)
             first_index = last_index + 1
-    
+
     # Reverse last word
     reverseArray(sentence, first_index, n)
+
+
+def reverseSentenceOutOfPlace(characters):
+    sentence = ''.join(characters)
+    words = sentence.split()
+    word_count = len(words)
+
+    for i in range(word_count // 2):
+      words[i], words[(word_count-1)-i] = words[(word_count-1)-i], words[i]
+
+    sentence = ' '.join(words)
+
+    return list(sentence)
 
 
 # Test function
@@ -34,3 +47,6 @@ if __name__ == "__main__":
   mySentence = ['t','h','i','s',' ','i','s',' ','g','o','o','d']
   reverseSentence(mySentence)
   print(mySentence)
+
+  mySentence = ['t','h','i','s',' ','i','s',' ','g','o','o','d']
+  print(reverseSentenceOutOfPlace(mySentence))
