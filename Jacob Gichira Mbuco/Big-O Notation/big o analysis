@@ -1,0 +1,17 @@
+def countdown(n): 
+    while n > 0: // O(n)
+        print(n)//O(1)
+        n -= 1//O(1)
+    print("Blast off!") //O(1)
+     
+     Space Complexity --- O(1)-we dont create extra space of variables
+     Time complexity ----O(n) - time grows with n inputs 
+     
+    
+    >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+    def countdown_recursive(n):
+    if n == 0:
+        print("Blast off")
+    else:
+        print(n)
+        countdown_recursive(n - 1)
