@@ -18,7 +18,7 @@ def countdown(n):
         print(n) # 0(1)
         countdown_recursive(n - 1) #O(n)
 	#	space complecxity -----O(1) -we print out before the varibles are put on the stack hence they dont take up extra space
-     #   time complextity -------O(n) -time grows with n inputs.
+     #   time complextity -------O(n) -time complexity grows linearly
         
      >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>   
  3. Palindrome
@@ -26,29 +26,29 @@ def countdown(n):
     if len(s) == 0:# O(1)
         return True   # an empty string is a palindrome // O(1)
 
-    size = len(s) #O(s)
+    size = len(s) #O(1)
     midpoint = size // 2 # 0(1)
     
-    for i in range(midpoint + 1): #O(i)
-        if s[i] != s[size - i - 1]# O(i)
-            return False
-    return True
-  #  space complexity --------------O(s) variables grow with s inputs
-   # time complexity ----------------0(i)-time grows with i inputs
+    for i in range(midpoint + 1): #O(n)
+        if s[i] != s[size - i - 1]# O(1)
+            return False# O(1)
+    return True# O(1)
+  #  space complexity --------------O(1) -space complexity is constant 
+   # time complexity ----------------0(n)-time complexity grows linearly 
     >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
  4. Palindrome using reversed string   
  def is_palindrome_rev(s):
-    reversed_s = s[::-1] # This is a neat trick to reverse a string in python //0(s)
-    return s == reversed_s // O(1)
-   # space complexity --------------------------O(1) we dont create extra space of s we reverse it in place 
-    # time complexity ------------------------O(s) time grows with s inputs
+    reversed_s = s[::-1] #O (n) # This is a neat trick to reverse a string in python 
+    return s == reversed_s // 2 #O(1)
+   # space complexity --------------------------O(n) space complexity grows linearly
+    # time complexity ------------------------O(n) time complexity grows linearly 
 4.1 
 def is_palindrome_rev2(s):
-    reversed_seq = reversed(s) # creates a sequence with the characters in the string in reverse //O(1)
-    reversed_s = ''.join(reversed_seq) # transformed the reversed sequence into a string//0(1)
-    return s == reversed_s
-  #  space complexity------------------------------O(s) we create an extra variable to store reversed _s
-  #  time complexity --------------------------------O(1) time does not grow with s inputs
+    reversed_seq = reversed(s)#O(n) # creates a sequence with the characters in the string in reverse 
+    reversed_s = ''.join(reversed_seq)#0(1) # transformed the reversed sequence into a string 
+    return s == reversed_s #O (1)
+  #  space complexity------------------------------O(n) space complexity grows linearly
+  #  time complexity --------------------------------O(n) time complexity grows linearly
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 5. palindrome using recursion
 def is_palindrome_recur(s):
@@ -60,6 +60,6 @@ def is_palindrome_recur(s):
     # in python s[-1] is the last element of the sequence s, i.e. "madam"[-1] -> "m"
     # and s[1: -1] will create a slice starting from the second element to the second last element
     # "madam"[1: -1] -> "ada"
-    return s[0] == s[-1] and is_palindrome_recur(s[1:-1]) #O(n)
-#space complexity----------------------------------0(1) we dont use extra space to store inputs
-#time complexity ------------------------------------0(n) time growns linear with s inputs
+    return s[0] == s[-1] and is_palindrome_recur(s[1:-1]) #O(1)
+#space complexity----------------------------------0(n*n) space complexity is constant 
+#time complexity ------------------------------------0(n) time complexity is constant
