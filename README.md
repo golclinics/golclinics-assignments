@@ -1,5 +1,10 @@
 # golclinics-assignments
-# Submitting GoL Clinics Assignments Instructions. 
+
+## Location of the Assignments:
+
+👉 https://github.com/golclinics/golclinics-dsa/tree/main/assignments
+
+##  Submitting GoL Clinics Assignments Instructions. 
 
 Assignment will be posted on Microsoft Teams (Specific Channel) after every lesson by the GOL Ambassadors.
 
