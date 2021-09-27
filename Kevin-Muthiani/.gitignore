@@ -1,0 +1,13 @@
+# Java
+*.class
+
+# C#
+*.exe
+
+# IDEs
+.vscode/
+.code-workspace
+.idea/
+
+# Others
+Uploads/

@@ -1,0 +1,3 @@
+language = "python3"
+run = "python Kevin-Muthiani/Sorting/sort_cards.py"
+
