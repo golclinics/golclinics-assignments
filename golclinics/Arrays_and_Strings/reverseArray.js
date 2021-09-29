@@ -7,4 +7,3 @@ function reverseArray (a) {
     return newArr;
 }
 console.log(reverseArray([10,5,6,9]));
-    
