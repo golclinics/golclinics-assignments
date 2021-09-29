@@ -20,6 +20,7 @@ public class Main {
      *
      * @param A, integer array
      *   reverse the element of int array a
+     *   Without using another array 
      */
     static void  reverseArray( int []A){
     int temp;
