@@ -3,7 +3,7 @@
 // and reverses it, without using another array or collection data structure;
 // in-place.
 
-var A = [1, 2, 3, 4, 5, 6, 7];
+const A = [1, 2, 3, 4, 5, 6, 7];
 
 // reverse array function
 function reverseArray(A) {
