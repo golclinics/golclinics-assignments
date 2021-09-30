@@ -48,3 +48,30 @@ function reverseSentence(s) {
 
 const sentence = ["t", "h", "i", "s", " ", "i", "s", " ", "g", "o", "o", "d"];
 console.log(reverseSentence(sentence));
+
+//TODO Q3 - WIP
+
+/**
+4. Leetcode: Remove Element
+
+URL - https://leetcode.com/problems/remove-element/
+ */
+/**
+ * @param {number[]} nums
+ * @param {number} val
+ * @return {number}
+ */
+var removeElement = function (nums, val) {
+	let count = 0;
+	for (let i = 0; i < nums.length; i++) {
+		if (nums[i] === val) {
+			nums[i] = "x";
+			count++;
+		}
+	}
+	nums.sort().splice(nums.indexOf("x"), count);
+	return nums.sort().length;
+};
+
+console.log(removeElement([3, 2, 2, 3], 3));
+//console.log(removeElement([0,1,2,2,3,0,4,2], 2))
