@@ -23,3 +23,28 @@ function reverseArray(arr) {
 
 const testArray = [10, 5, 6, 9];
 console.log(`${testArray} reversed is: ${reverseArray(testArray)}`);
+
+/**
+2. Reverse Sentence In-place
+
+Write a function reverseSentence(A) that takes in an array of characters, A, and reverses 
+the the "words" (not individual characters).
+
+Example:
+
+A = ['t','h','i','s',' ','i','s',' ','g','o','o','d']
+reverseSentence(A)
+A // ['g','o','o','d',' ','i','s',' ','t','h','i','s']
+ */
+
+function reverseSentence(s) {
+	const wordArr = [...s].join("").split(" ");
+
+	//reusing function from Q1 above
+	reverseArray(wordArr);
+
+	return wordArr.join(" ").split("");
+}
+
+const sentence = ["t", "h", "i", "s", " ", "i", "s", " ", "g", "o", "o", "d"];
+console.log(reverseSentence(sentence));
