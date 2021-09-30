@@ -1,29 +1,26 @@
 def reversedSentence(A):
-    matrix_arr = []
-    tempArr = []
-    # separate the words with a 2d array
-    for i in range(len(A)):
-        if (A[i] == ' ') and len(tempArr) != 0:
-            matrix_arr.append(tempArr)
-            tempArr = []
-        else: 
-            tempArr.append(A[i])
-    
-    if len(tempArr) != 0:
-        matrix_arr.append(tempArr)
+    def reverseElements(A,start=0,stop=len(A)-1):
+        while start < stop:
+            A[start], A[stop] = A[stop], A[start]
+            start, stop = start+1, stop-1
 
-    # reverse the words
-    matrix_arr.reverse()
+    # reverse whole array
+    reverseElements(A)
+    start = 0
 
-    # revert the array back to 1d array
-    finalArr = []
-    for i in range(len(matrix_arr)):
-        for j in range(len(matrix_arr[i])):
-            finalArr.append(matrix_arr[i][j])
-            if j == (len(matrix_arr[i])-1):
-                finalArr.append(' ')
+    # loop through whole array reversing subsets of it(words)
+    while True:
+        try:
+            end = A.index(' ',start,len(A))
+        except:
+            reverseElements(A,start,len(A)-1)
+            break
 
-    print(finalArr)
+        reverseElements(A, start,end-1)
+
+        start = end + 1
+
+    print(A)
 
 
 A = ['t','h','i','s',' ','i','s',' ','g','o','o','d']
