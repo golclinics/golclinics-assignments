@@ -13,13 +13,7 @@ def reversedSentence(A):
         matrix_arr.append(tempArr)
 
     # reverse the words
-    start_index = 0
-    end_index = len(matrix_arr) - 1
-
-    while start_index < end_index:
-        matrix_arr[start_index], matrix_arr[end_index] = matrix_arr[end_index], matrix_arr[start_index]
-        start_index +=1
-        end_index-=1
+    matrix_arr.reverse()
 
     # revert the array back to 1d array
     finalArr = []
