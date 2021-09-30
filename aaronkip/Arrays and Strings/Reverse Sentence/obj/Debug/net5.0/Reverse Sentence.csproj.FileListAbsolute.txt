@@ -1,0 +1,16 @@
+D:\GOL Clinics\golclinics-assignments\aaronkip\Arrays and Strings\Reverse Sentence\bin\Debug\net5.0\Reverse Sentence.exe
+D:\GOL Clinics\golclinics-assignments\aaronkip\Arrays and Strings\Reverse Sentence\bin\Debug\net5.0\Reverse Sentence.deps.json
+D:\GOL Clinics\golclinics-assignments\aaronkip\Arrays and Strings\Reverse Sentence\bin\Debug\net5.0\Reverse Sentence.runtimeconfig.json
+D:\GOL Clinics\golclinics-assignments\aaronkip\Arrays and Strings\Reverse Sentence\bin\Debug\net5.0\Reverse Sentence.runtimeconfig.dev.json
+D:\GOL Clinics\golclinics-assignments\aaronkip\Arrays and Strings\Reverse Sentence\bin\Debug\net5.0\Reverse Sentence.dll
+D:\GOL Clinics\golclinics-assignments\aaronkip\Arrays and Strings\Reverse Sentence\bin\Debug\net5.0\ref\Reverse Sentence.dll
+D:\GOL Clinics\golclinics-assignments\aaronkip\Arrays and Strings\Reverse Sentence\bin\Debug\net5.0\Reverse Sentence.pdb
+D:\GOL Clinics\golclinics-assignments\aaronkip\Arrays and Strings\Reverse Sentence\obj\Debug\net5.0\Reverse Sentence.csprojAssemblyReference.cache
+D:\GOL Clinics\golclinics-assignments\aaronkip\Arrays and Strings\Reverse Sentence\obj\Debug\net5.0\Reverse Sentence.GeneratedMSBuildEditorConfig.editorconfig
+D:\GOL Clinics\golclinics-assignments\aaronkip\Arrays and Strings\Reverse Sentence\obj\Debug\net5.0\Reverse Sentence.AssemblyInfoInputs.cache
+D:\GOL Clinics\golclinics-assignments\aaronkip\Arrays and Strings\Reverse Sentence\obj\Debug\net5.0\Reverse Sentence.AssemblyInfo.cs
+D:\GOL Clinics\golclinics-assignments\aaronkip\Arrays and Strings\Reverse Sentence\obj\Debug\net5.0\Reverse Sentence.csproj.CoreCompileInputs.cache
+D:\GOL Clinics\golclinics-assignments\aaronkip\Arrays and Strings\Reverse Sentence\obj\Debug\net5.0\Reverse Sentence.dll
+D:\GOL Clinics\golclinics-assignments\aaronkip\Arrays and Strings\Reverse Sentence\obj\Debug\net5.0\ref\Reverse Sentence.dll
+D:\GOL Clinics\golclinics-assignments\aaronkip\Arrays and Strings\Reverse Sentence\obj\Debug\net5.0\Reverse Sentence.pdb
+D:\GOL Clinics\golclinics-assignments\aaronkip\Arrays and Strings\Reverse Sentence\obj\Debug\net5.0\Reverse Sentence.genruntimeconfig.cache

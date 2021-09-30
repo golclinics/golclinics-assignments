@@ -1,0 +1,16 @@
+D:\GOL Clinics\golclinics-assignments\aaronkip\Arrays and Strings\Reverse Array\bin\Debug\net5.0\Reverse Array.exe
+D:\GOL Clinics\golclinics-assignments\aaronkip\Arrays and Strings\Reverse Array\bin\Debug\net5.0\Reverse Array.deps.json
+D:\GOL Clinics\golclinics-assignments\aaronkip\Arrays and Strings\Reverse Array\bin\Debug\net5.0\Reverse Array.runtimeconfig.json
+D:\GOL Clinics\golclinics-assignments\aaronkip\Arrays and Strings\Reverse Array\bin\Debug\net5.0\Reverse Array.runtimeconfig.dev.json
+D:\GOL Clinics\golclinics-assignments\aaronkip\Arrays and Strings\Reverse Array\bin\Debug\net5.0\Reverse Array.dll
+D:\GOL Clinics\golclinics-assignments\aaronkip\Arrays and Strings\Reverse Array\bin\Debug\net5.0\ref\Reverse Array.dll
+D:\GOL Clinics\golclinics-assignments\aaronkip\Arrays and Strings\Reverse Array\bin\Debug\net5.0\Reverse Array.pdb
+D:\GOL Clinics\golclinics-assignments\aaronkip\Arrays and Strings\Reverse Array\obj\Debug\net5.0\Reverse Array.csprojAssemblyReference.cache
+D:\GOL Clinics\golclinics-assignments\aaronkip\Arrays and Strings\Reverse Array\obj\Debug\net5.0\Reverse Array.GeneratedMSBuildEditorConfig.editorconfig
+D:\GOL Clinics\golclinics-assignments\aaronkip\Arrays and Strings\Reverse Array\obj\Debug\net5.0\Reverse Array.AssemblyInfoInputs.cache
+D:\GOL Clinics\golclinics-assignments\aaronkip\Arrays and Strings\Reverse Array\obj\Debug\net5.0\Reverse Array.AssemblyInfo.cs
+D:\GOL Clinics\golclinics-assignments\aaronkip\Arrays and Strings\Reverse Array\obj\Debug\net5.0\Reverse Array.csproj.CoreCompileInputs.cache
+D:\GOL Clinics\golclinics-assignments\aaronkip\Arrays and Strings\Reverse Array\obj\Debug\net5.0\Reverse Array.dll
+D:\GOL Clinics\golclinics-assignments\aaronkip\Arrays and Strings\Reverse Array\obj\Debug\net5.0\ref\Reverse Array.dll
+D:\GOL Clinics\golclinics-assignments\aaronkip\Arrays and Strings\Reverse Array\obj\Debug\net5.0\Reverse Array.pdb
+D:\GOL Clinics\golclinics-assignments\aaronkip\Arrays and Strings\Reverse Array\obj\Debug\net5.0\Reverse Array.genruntimeconfig.cache
