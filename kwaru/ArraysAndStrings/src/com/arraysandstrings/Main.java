@@ -18,33 +18,29 @@ public class Main {
 
     /**
      *
-     * @param A, integer array
+     * @param a, integer array
      *   reverse the element of int array a
-     *   Without using another array 
      */
-    static void  reverseArray( int []A){
+    static void  reverseArray( int []a){
     int temp;
     int j=0;
 
-        if(A.length==0) // check if the array is  empty
+        if(a.length==0) // check if the array is  empty
             return ;
 
-          int  reverseTimes=A.length/2; // i need to perform reverse approximately length divide by times
-                                         //to take of the last  sole element in case of odd number of elements
+          int  reverseTimes=a.length/2;
+        for(int i=a.length-1; i>=0; i--) {
 
-
-        for(int i=A.length-1; i>=0; i--) { // if not give print reversed
-
-            temp= A[j];
-            A[j]=A[i];
-            A[i]=temp;
+            temp= a[j];
+            a[j]=a[i];
+            a[i]=temp;
             j++;
-            if(j==reverseTimes) // break when number reverses is reached
+            if(j==reverseTimes)
                 break;
 
 
         }
-        formatArray(A);// output array object
+        formatArray(a);// output array object
 return ;
 
 
@@ -57,7 +53,6 @@ return ;
     /**
      *
      * @param resultArray
-     * print array nicely eg [,9,6,5,10]
      */
     static void formatArray(int []resultArray){
         int i=0;
@@ -70,6 +65,9 @@ return ;
         }
         System.out.print("]");
     }
+
+
+
 
 }
 
