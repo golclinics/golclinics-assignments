@@ -10,14 +10,13 @@ func main() {
 
 func removeElement(nums []int, val int) int {
 	var i int
-	k := len(nums)
-	for i < k {
+	for i < len(nums) {
 		if val == nums[i] {
-			nums[i] = nums[k-1]
-			k--
+			nums[i] = nums[len(nums)-1]
+			nums = nums[:len(nums)-1]
 			continue
 		}
 		i++
 	}
-	return k
+	return len(nums)
 }
