@@ -6,61 +6,57 @@ const SPACE = " ";
  * @returns {string[]} modified, reversed wordsList array
  */
 function reverseSentence(wordsList: string[]): string[] {
-  let currentIdx = 0;
-  const wordStack: string[] = [];
+  // intitial reversal
+  reverseSentenceInPlace(wordsList, 0, wordsList.length - 1);
 
-  while (currentIdx < wordsList.length) {
-    if (wordsList[currentIdx] !== SPACE) {
-      currentIdx = registerWord(wordsList, currentIdx, wordStack);
+  let wordStart = 0;
+
+  for (let i = 0; i < wordsList.length; i++) {
+    while (wordsList[wordStart] === SPACE) wordStart++;
+
+    if (i > wordStart) {
+      if (wordsList[i] === SPACE) {
+        reverseSentenceInPlace(wordsList, wordStart, i - 1);
+        wordStart = i;
+      } else if(i + 1 >= wordsList.length && wordsList[i] !== SPACE) {
+        reverseSentenceInPlace(wordsList, wordStart, i);
+        wordStart = i;
+      }
     }
-
-    if (wordsList[currentIdx] === SPACE) {
-      wordStack.push(SPACE);
-    }
-
-    currentIdx++;
-  }
-
-  wordsList.length = 0;
-
-  while (wordStack.length > 0) {
-    const currentWord = wordStack.pop();
-    const currentWordArr = currentWord.split("");
-
-    wordsList.push(...currentWordArr);
   }
 
   return wordsList;
 }
 
 /**
- * Build up a word from the wordsList and register it in wordStack
- * @param {string[]} wordsList - an array of characters representing words
- * @param {number} startIdx - index to start constructing a word
- * @param {string[]} wordStack - an array of individually registered words
- * @returns 
+ * Reverse parts of arr in-place
+ * @param {string[]} arr - an array of characters
+ * @param {number} idx1 - first idx to begin reversal
+ * @param {number} idx2 - second idx to end reversal
  */
-function registerWord(
-  wordsList: string[],
-  startIdx: number,
-  wordStack: string[]
-): number {
-  let currentIdx = startIdx;
-  let currentWord = "";
+function reverseSentenceInPlace(
+  arr: string[],
+  idx1: number,
+  idx2: number
+): void {
+  let leftIdx = idx1,
+    rightIdx = idx2;
 
-  while (currentIdx < wordsList.length) {
-    const currentChar = wordsList[currentIdx];
-
-    if (currentChar === SPACE) break;
-
-    currentWord += currentChar;
-
-    currentIdx++;
+  while (leftIdx < rightIdx) {
+    swap(arr, leftIdx, rightIdx);
+    leftIdx++;
+    rightIdx--;
   }
+}
 
-  wordStack.push(currentWord);
-
-  return currentIdx;
+/**
+ * Swap items in idx1 with idx2
+ * @param {string[]} arr - an array of characters to perform swap
+ * @param {number} idx1 - swap item at index idx1 with idx2
+ * @param {number} idx2 - swap item at index idx2 with idx1
+ */
+function swap(arr: string[], idx1: number, idx2: number): void {
+  [arr[idx2], arr[idx1]] = [arr[idx1], arr[idx2]];
 }
 
 const A = ["t", "h", "i", "s", " ", "i", "s", " ", "g", "o", "o", "d"];
