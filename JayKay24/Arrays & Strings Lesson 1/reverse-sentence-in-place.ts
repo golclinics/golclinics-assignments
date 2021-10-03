@@ -20,7 +20,6 @@ function reverseSentence(wordsList: string[]): string[] {
         wordStart = i;
       } else if(i + 1 >= wordsList.length && wordsList[i] !== SPACE) {
         reverseSentenceInPlace(wordsList, wordStart, i);
-        wordStart = i;
       }
     }
   }
