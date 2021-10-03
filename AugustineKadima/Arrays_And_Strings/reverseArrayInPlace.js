@@ -15,4 +15,4 @@ const reverseArray = (A) => {
     console.log(A);
 
 }
-reverseArray([9, 6, 5, 10,7,4,3,4,5]);
+reverseArray([9, 6, 5, 10, 7, 4, 3, 4, 5]);
