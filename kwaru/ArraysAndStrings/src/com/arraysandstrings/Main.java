@@ -9,9 +9,12 @@ public class Main {
 
     public static void main(String[] args) {
 
-        int [] A = new int[]{10, 5, 6, 9};
+        int [] A = new int[]{4 ,3 ,1 ,2};
 
-       reverseArray(A);
+       //reverseArray(A);
+       ArrayAndStrings arrayAndStrings = new ArrayAndStrings();
+       //System.out.println(arrayAndStrings.Sorting(A));
+        System.out.println(arrayAndStrings.insertionSort(A));
 
     }
 
@@ -40,7 +43,7 @@ public class Main {
 
 
         }
-        formatArray(a);// output array object
+        //formatArray(a);// output array object
 return ;
 
 
