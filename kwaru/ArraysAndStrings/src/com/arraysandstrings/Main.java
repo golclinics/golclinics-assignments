@@ -11,10 +11,7 @@ public class Main {
 
         int [] A = new int[]{4 ,3 ,1 ,2};
 
-       //reverseArray(A);
-       ArrayAndStrings arrayAndStrings = new ArrayAndStrings();
-       //System.out.println(arrayAndStrings.Sorting(A));
-        System.out.println(arrayAndStrings.insertionSort(A));
+       reverseArray(A);
 
     }
 
@@ -43,7 +40,7 @@ public class Main {
 
 
         }
-        //formatArray(a);// output array object
+        formatArray(a);// output array object
 return ;
 
 
@@ -71,6 +68,64 @@ return ;
 
 
 
+
+
+    // Todo ['t','h','i','s',' ','i','s',' ','g','o','o','d']
+
+    public static void reverseArrayofStrings(String [] A){
+        int j=A.length;
+
+
+
+    }
+
+
+
+
+    /**
+     *
+     * @param array
+     * @param i
+     * @param j
+     * @return
+     */
+
+    public int swapElements(int array[],int i , int j){
+        if(i==j)
+            return 0;
+
+
+        int temp = array[i];
+        array[i]= array[j];
+        array[j]=temp;
+
+        return 1; }
+
+
+
+    /**
+     *
+     * @param a
+     * @return mini number of swap operations
+     */
+
+    public  int minimumSwaps(int[] a) {
+        int swap=0;
+        for(int i=0;i<a.length;i++){
+            if(i+1!=a[i]){
+                int t=i;
+                while(a[t]!=i+1){
+                    t++;
+                }
+                int temp=a[t];
+                a[t]=a[i];
+                a[i]=temp;
+                swap++;
+            }
+        }
+        return swap;
+
+    }
 
 }
 
