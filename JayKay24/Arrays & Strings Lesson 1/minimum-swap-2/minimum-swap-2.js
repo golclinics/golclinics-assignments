@@ -20,6 +20,12 @@ function minimumSwaps(arr) {
   return minSwaps;
 }
 
+/**
+ * Swap item at idx1 with item at idx2
+ * @param arr - an array of integers
+ * @param {number} idx1 - swap item at index idx1 with item at idx2
+ * @param {number} idx2 - swap item at index idx2 with item at idx1
+ */
 function swap(arr, idx1, idx2) {
   [arr[idx2], arr[idx1]] = [arr[idx1], arr[idx2]];
 }

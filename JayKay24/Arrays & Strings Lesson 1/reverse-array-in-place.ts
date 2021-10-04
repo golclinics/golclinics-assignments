@@ -17,10 +17,10 @@ function reverseArray<T>(items: T[]): T[] {
 }
 
 /**
- * Swap items at indexes provided with each other
- * @param arr - an array of items
- * @param idx1 - first index
- * @param idx2 - second index
+ * Swap item at idx1 with item at idx2
+ * @param {T[]} arr - an array of items
+ * @param {number} idx1 - swap item at index idx1 with item at idx2
+ * @param {number} idx2 - swap item at index idx2 with item at idx1
  */
 function swap<T>(arr: T[], idx1: number, idx2: number): void {
   [arr[idx2], arr[idx1]] = [arr[idx1], arr[idx2]];

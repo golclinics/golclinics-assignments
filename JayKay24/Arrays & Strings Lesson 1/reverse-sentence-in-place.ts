@@ -18,7 +18,7 @@ function reverseSentence(wordsList: string[]): string[] {
       if (wordsList[i] === SPACE) {
         reverseSentenceInPlace(wordsList, wordStart, i - 1);
         wordStart = i;
-      } else if(i + 1 >= wordsList.length && wordsList[i] !== SPACE) {
+      } else if(i + 1 >= wordsList.length) {
         reverseSentenceInPlace(wordsList, wordStart, i);
       }
     }
@@ -49,10 +49,10 @@ function reverseSentenceInPlace(
 }
 
 /**
- * Swap items in idx1 with idx2
- * @param {string[]} arr - an array of characters to perform swap
- * @param {number} idx1 - swap item at index idx1 with idx2
- * @param {number} idx2 - swap item at index idx2 with idx1
+ * Swap item at idx1 with item at idx2
+ * @param {string[]} arr - an array of characters
+ * @param {number} idx1 - swap item at index idx1 with item at idx2
+ * @param {number} idx2 - swap item at index idx2 with item at idx1
  */
 function swap(arr: string[], idx1: number, idx2: number): void {
   [arr[idx2], arr[idx1]] = [arr[idx1], arr[idx2]];

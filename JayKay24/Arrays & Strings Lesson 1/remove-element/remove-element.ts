@@ -39,10 +39,10 @@ function removeElement(nums: number[], val: number): number {
 }
 
 /**
- * Swap items at indexes provided with each other
- * @param {number[]} arr - an array of integers that need swapping
- * @param {number} idx1 index to swap with idx2
- * @param {number} idx2 index to swap with idx1
+ * Swap item at idx1 with item at idx2
+ * @param {number[]} arr - an array of integers
+ * @param {number} idx1 - swap item at index idx1 with item at idx2
+ * @param {number} idx2 - swap item at index idx2 with item at idx1
  */
 function swap(arr: number[], idx1: number, idx2: number): void {
   [arr[idx2], arr[idx1]] = [arr[idx1], arr[idx2]];
