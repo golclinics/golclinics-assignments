@@ -7,8 +7,8 @@
 
 *fn(n) = n + n + 1*
 
-**O(n)** - `print(n)` & `n -= 1` will be called as many times as the size of `n`. If `n = 6`, then `print(n)` & `n -= 1` will each be called **6** times.
+**O(n)** - `print(n)` & `n -= 1` will be called as many times as the size of `n` as long as `n > 0` in the loop. If `n = 6`, then `print(n)` & `n -= 1` will each be called **6** times.
 
 ### Space Complexity
 
-**O(1)** - No auxiliary memory is required to execute the algorithm.
+**O(1)** - No auxiliary memory is tied to the size of `n` in the algorithm.
