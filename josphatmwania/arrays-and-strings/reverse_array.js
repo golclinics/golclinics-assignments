@@ -8,9 +8,21 @@
 // A // [9, 6, 5, 10]
 
 
-A = [10, 5, 6, 9];
-
-Array.prototype.reverse.call(A);
-console.log(A);
 
 
+
+
+function reverseArray(A) {
+	let m = 0;
+	for (let i = A.length - 1; i >= m; i--) {
+		let a = A[m];
+		A[m] = A[i];
+		A[i] = a;
+		m++;
+	}
+	return A;
+}
+// Given Array
+const Array = [10, 5, 6, 9];
+
+console.log(`${Array} the reversed is: ${reverseArray(Array)}`);
