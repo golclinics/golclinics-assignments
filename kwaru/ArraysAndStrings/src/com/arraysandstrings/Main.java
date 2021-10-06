@@ -13,6 +13,13 @@ public class Main {
 
        reverseArray(A);
 
+        char []charArray = new char[]{'t','h','i','s',' ','i','s',' ','g','o','o','d'};
+
+        rotateStringArray(charArray);
+
+        
+        formatArrayStr(charArray);
+
     }
 
 
@@ -50,6 +57,31 @@ return ;
     }
 
 
+
+
+
+
+    public  static void rotateChar(int startIndex, int endIndex,char[]array){
+        char temp=' ';
+        for(int y =startIndex; y<endIndex;y ++){
+            temp= array[y];
+            array[y]=array[endIndex];
+            array[endIndex]=temp;
+            endIndex--;
+
+        }
+
+    }
+
+
+
+
+
+
+
+
+
+
     /**
      *
      * @param resultArray
@@ -66,17 +98,49 @@ return ;
         System.out.print("]");
     }
 
+   static void formatArrayStr(char []resultArray){
+        int i=0;
+        System.out.print("[");
+        for(char k : resultArray){
+
+            if(i==0)System.out.print(k);// the first element should not have , before
+            if(i>0)System.out.print(","+k);
+            i++;
+        }
+        System.out.print("]");
+    }
 
 
 
 
-    // Todo ['t','h','i','s',' ','i','s',' ','g','o','o','d']
 
-    public static void reverseArrayofStrings(String [] A){
-        int j=A.length;
+    /**
+     *
+     * A = ['t','h','i','s',' ','i','s',' ','g','o','o','d']
+     * reverseSentence(A)
+     * A // ['g','o','o','d',' ','i','s',' ','t','h','i','s']
+     *
+     * @param array
+     */
+    public static char [] rotateStringArray(char [] array){
+        char temp=' ';
+        int i =0;
+        int j= array.length-1;
+        for( i =0;i< array.length; i++){
 
+            if(array[i]==' ')
+                break;
+            temp=array[i];
+            array[i]=array[j];
+            array[j]=temp;
 
+            j--;
 
+        }
+        rotateChar(0,i-1,array);
+        rotateChar(j+1,array.length-1,array);
+
+        return array;
     }
 
 
