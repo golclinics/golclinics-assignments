@@ -1,7 +1,19 @@
 # Analyze the space & time complexity of the following algorithm
 ## Problem
 
-![Palindrome](./images/Screenshot%202021-10-05%20at%2009.27.14.png)
+```python
+def is_palindrome(s):
+    if len(s) == 0:
+        return True   # an empty string is a palindrome
+
+    size = len(s)
+    midpoint = size // 2
+    
+    for i in range(midpoint + 1):
+        if s[i] != s[size - i - 1]:
+            return False
+    return True
+```
 
 ### Time Complexity
 

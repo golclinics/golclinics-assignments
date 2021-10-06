@@ -1,7 +1,13 @@
 # Analyze the space & time complexity of the following algorithm
 ## Problem
 
-![Countdown](./images/Screenshot%202021-10-04%20at%2021.47.02.png)
+```python
+def countdown(n):
+    while n > 0:
+        print(n)
+        n -= 1
+    print("Blast off!")
+```
 
 ### Time Complexity
 

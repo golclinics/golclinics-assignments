@@ -1,7 +1,14 @@
 # Analyze the space & time complexity of the following algorithm
 ## Problem
 
-![Countdown recursive](./images/Screenshot%202021-10-04%20at%2022.24.24.png)
+```python
+def countdown_recursive(n):
+    if n == 0:
+        print("Blast off")
+    else:
+        print(n)
+        countdown_recursive(n - 1)
+```
 
 ### Time Complexity
 
