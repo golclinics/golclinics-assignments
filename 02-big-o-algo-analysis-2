@@ -1,0 +1,176 @@
+//Countdown
+
+using System;
+
+namespace Countdown
+{
+    class Program
+    {
+        //time complexity: O(n)
+        //Space complexity: O(n^2)
+
+        static void Main(string[] args)
+        {
+            int n = 10;
+            Countdown(n);
+            Console.WriteLine("Blast off");
+        }
+
+        static void Countdown(int n)
+        {
+            while (n > 0)
+            {
+                Console.WriteLine(n);
+                n--;
+            }
+        }
+    }
+}
+
+
+
+//Countdown Recursive
+using System;
+
+namespace CountdownRecursive
+{
+    class Program
+    {
+        //time complexity: O(n)
+        //Space complexity: O(n^2)
+
+        static void Main(string[] args)
+        {
+            int n = 10;
+            Countdown_Recursive(n);
+        }
+
+        static void Countdown_Recursive(int n)
+        {
+            for (int i = n; i >= 0; i--)
+            {
+                if(i==0)
+                {
+                    Console.WriteLine("Blast off");
+                }
+
+                else
+                {
+                    Console.WriteLine(i);
+                }
+            }
+        }
+    }
+}
+
+
+
+//Countdown Recursive
+using System;
+
+namespace CountdownRecursive
+{
+    class Program
+    {
+        //time complexity: O(n)
+        //Space complexity: O(n^2)
+
+        static void Main(string[] args)
+        {
+            int n = 10;
+            Countdown_Recursive(n);
+        }
+
+        static void Countdown_Recursive(int n)
+        {
+            for (int i = n; i >= 0; i--)
+            {
+                if(i==0)
+                {
+                    Console.WriteLine("Blast off");
+                }
+
+                else
+                {
+                    Console.WriteLine(i);
+                }
+            }
+        }
+    }
+}
+
+
+//Pallindrome
+using System;
+
+namespace Pallindrome
+{
+    class Program
+    {
+        //time complexity: O(n)
+        //Space complexity: O(n)
+
+        static string reverse = "";
+
+        static void Main(string[] args)
+        {
+            string input = "madam";
+            ReverseString(input);
+
+            if(input == reverse)
+                Console.WriteLine("True");
+            else
+                Console.WriteLine("False");
+        }
+
+        private static void ReverseString(string stringInput)
+        {
+            char[] stringArray = stringInput.ToCharArray();
+
+            for (int i = stringArray.Length - 1; i >= 0; i--)
+            {
+                reverse += stringArray[i];
+            }
+        }
+    }
+}
+
+
+//Concatenation
+using System;
+
+namespace Concatenation
+{
+    class Program
+    {
+        //time complexity: O(n^2)
+        //Space complexity: O(n)
+
+        static void Main(string[] args)
+        {
+            int[] m = { 1, 2, 3 };
+            int[] n = { 4, 5, 6 };
+            int[] result = new int[m.Length + n.Length];
+
+            int j = 0;
+            for (int i = 0; i < (m.Length + n.Length); i++)
+            {
+                if (i < m.Length)
+                {
+                    result[i] = m[i];
+                }
+                
+                else
+                {
+                    result[i] = n[j];
+                    j = j + 1;
+                }
+            }
+
+            for (int l = 0; l < (m.Length + n.Length); l++)
+            {
+                Console.Write(result[l]);
+            }
+        }
+    }
+}
