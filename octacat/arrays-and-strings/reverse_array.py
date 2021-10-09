@@ -1,7 +1,6 @@
 #Write a function reverseArray(A) that takes in an array A and reverses it, 
 #without using another array or collection data structure; in-place.
 
-
 def reverseArray(A):
     if len(A) == 0:
         print("A can not be empty")
