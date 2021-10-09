@@ -2,9 +2,8 @@
 #without using another array or collection data structure; in-place.
 
 def reverseArray(A):
-    if len(A) == 0:
-        print("A can not be empty")
-        return
+    if ( not A ) or ( A == 0 ):
+        exit("The array can not be empty")
 
     #Begining of the index
     start_index = 0
