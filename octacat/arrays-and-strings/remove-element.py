@@ -7,6 +7,10 @@ def removeElement(inputNum, val):
 
     counter = 0
     for num in inputNum:
+        if (str(num).isdigit() == False):
+            exit("The array can only be number") 
+        if num < 0:
+            exit("The array list can not be less than 0")
         #Check if value exist in the list
         if (num != val):
             counter += 1
