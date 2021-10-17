@@ -1,4 +1,4 @@
-## Palindrome using recursion
+# Palindrome using recursion
 
 This implementation is similar to the loop-based version in that it compares a pair of letters
 at equal distances from the middle of the string in each iteration. But it does so using
@@ -16,3 +16,5 @@ def is_palindrome_recur(s):
     # "madam"[1: -1] -> "ada"
     return s[0] == s[-1] and is_palindrome_recur(s[1:-1])
 ```
+
+## Time Complexity
