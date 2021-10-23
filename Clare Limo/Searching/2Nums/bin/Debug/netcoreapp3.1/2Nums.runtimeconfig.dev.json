@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "/home/moringa/.dotnet/store/|arch|/|tfm|",
+      "/home/moringa/.nuget/packages"
+    ]
+  }
+}
