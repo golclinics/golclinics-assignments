@@ -1,6 +1,7 @@
 class MinStack {
   private stack: number[];
   private minValTracker: number[];
+  private defaultValue: number = -Infinity;
 
   constructor() {
     this.stack = [];
@@ -43,7 +44,9 @@ class MinStack {
    * @returns The top element of the stack
    */
   top(): number {
-    return this.stack[this.stack.length - 1];
+    return this.stack.length === 0
+      ? this.defaultValue
+      : this.stack[this.stack.length - 1];
   }
 
   /**
@@ -52,6 +55,8 @@ class MinStack {
    * @returns The minimum element in the stack
    */
   getMin(): number {
-    return this.minValTracker[this.minValTracker.length - 1];
+    return this.stack.length === 0
+      ? this.defaultValue
+      : this.minValTracker[this.minValTracker.length - 1];
   }
 }
