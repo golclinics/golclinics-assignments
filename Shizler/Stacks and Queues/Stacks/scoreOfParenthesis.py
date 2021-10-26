@@ -12,7 +12,7 @@
 # 	Output: 2
 # 	Input: s = "(()(()))"
 # 	Output: 6
-def scoreOfParentheses(s):
+def scoreOfParenthesis(s):
     stack = []
     count=0
     for bracket in s:
@@ -21,8 +21,8 @@ def scoreOfParentheses(s):
         if bracket == ')':
             stack.pop()
             count+=1
-    print(count)
+    return count
 if __name__ == '__main__':
     ss = ["()","(())","()()","(()(()))"]
     for s in ss:
-        scoreOfParentheses(s)
+        print(scoreOfParenthesis(s))
