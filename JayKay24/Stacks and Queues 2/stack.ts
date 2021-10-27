@@ -4,7 +4,7 @@ export class Stack<T> {
 
   constructor(defaultVal: T) {
     this.elements = [];
-		this.defaultValue = defaultVal;
+    this.defaultValue = defaultVal;
   }
 
   private get lastIdx(): number {
