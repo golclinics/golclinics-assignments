@@ -9,7 +9,7 @@ export class MyQueue {
     this.pushStack = new Stack<number>(this.defaultValue);
     this.popStack = new Stack<number>(this.defaultValue);
   }
-  
+
   /**
    * Pushes element x to the back of the queue
    *

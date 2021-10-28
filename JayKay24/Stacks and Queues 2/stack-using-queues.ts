@@ -25,7 +25,7 @@ class MyStack {
    * @returns The element just popped from the stack
    */
   pop(): number {
-		let lastQueueItem = this.drainPushQueue();
+    let lastQueueItem = this.drainPushQueue();
 
     this.drainHelperQueue();
 
@@ -40,7 +40,7 @@ class MyStack {
    * @returns The integer on top of the stack
    */
   top(): number {
-		let lastQueueItem = this.drainPushQueue();
+    let lastQueueItem = this.drainPushQueue();
 
     this.drainHelperQueue();
 
