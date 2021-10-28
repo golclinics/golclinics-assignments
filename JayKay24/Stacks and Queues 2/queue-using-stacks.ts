@@ -31,11 +31,7 @@ export class MyQueue {
       retVal = this.popStack.peek();
       this.popStack.pop();
     } else {
-      while (!this.pushStack.empty) {
-        const nextVal = this.pushStack.peek();
-        this.pushStack.pop();
-        this.popStack.push(nextVal);
-      }
+      this.populatePopStack();
 
       retVal = this.popStack.peek();
       this.popStack.pop();
@@ -55,11 +51,7 @@ export class MyQueue {
     if (!this.popStack.empty) {
       retVal = this.popStack.peek();
     } else {
-      while (!this.pushStack.empty) {
-        const nextVal = this.pushStack.peek();
-        this.pushStack.pop();
-        this.popStack.push(nextVal);
-      }
+      this.populatePopStack();
 
       retVal = this.popStack.peek();
     }
@@ -73,5 +65,16 @@ export class MyQueue {
    */
   empty(): boolean {
     return this.popStack.empty && this.pushStack.empty;
+  }
+
+  /**
+   * Drain the pushStack into the popStack
+   */
+  private populatePopStack() {
+    while (!this.pushStack.empty) {
+      const nextVal = this.pushStack.peek();
+      this.pushStack.pop();
+      this.popStack.push(nextVal);
+    }
   }
 }
