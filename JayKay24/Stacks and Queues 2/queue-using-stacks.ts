@@ -1,6 +1,6 @@
 import { Stack } from "./stack";
 
-class MyQueue {
+export class MyQueue {
   private pushStack: Stack<number>;
   private popStack: Stack<number>;
   private defaultValue = -Infinity;
@@ -9,6 +9,7 @@ class MyQueue {
     this.pushStack = new Stack<number>(this.defaultValue);
     this.popStack = new Stack<number>(this.defaultValue);
   }
+  
   /**
    * Pushes element x to the back of the queue
    *

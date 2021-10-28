@@ -7,11 +7,6 @@ export class Stack<T> {
     this.defaultValue = defaultVal;
   }
 
-  private get lastIdx(): number {
-    if (this.size === 0) return -1;
-    return this.size - 1;
-  }
-
   /**
    * Returns boolean representing if the stack is empty or not
    *
@@ -58,5 +53,10 @@ export class Stack<T> {
    */
   pop(): void {
     if (this.size > 0) this.elements.pop();
+  }
+
+  private get lastIdx(): number {
+    if (this.size === 0) return -1;
+    return this.size - 1;
   }
 }
