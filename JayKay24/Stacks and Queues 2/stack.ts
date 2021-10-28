@@ -8,7 +8,7 @@ export class Stack<T> {
   }
 
   private get lastIdx(): number {
-    if (this.size === 0) return 0;
+    if (this.size === 0) return -1;
     return this.size - 1;
   }
 
