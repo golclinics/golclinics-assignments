@@ -3,13 +3,13 @@ without using another array or collection data structure; in-place.`
 
 
 
-const reverseArray = (a) => {
-    let b = []
-    
-    for(let i = a.length-1; i>=0; i--){
-        b.push(a[i]);
+const reverseArray = (arr) => {
+    for (var i = 0; i <= (arr.length / 2); i++) {
+    let el = arr[i];
+      arr[i] = arr[arr.length - 1 - i];
+      arr[arr.length - 1 - i] = el;
     }
-    console.log(b)
+    return arr;
     }
     
-reverseArray([1,2,3,4,5])
+console.log(reverseArray([1,2,3,4,5]))
