@@ -26,7 +26,7 @@ class Student {
  * @param grades - Grades to use to establish a valid range
  * @returns Tuple containing lower and upper bounds of grade A to B
  */
-function build_grade_range_A_to_B(grades: Grade[]): [number, number] {
+function build_grade_bounds_A_to_B(grades: Grade[]): [number, number] {
   let lower_bound = 0,
     upper_bound = 0;
 
@@ -50,7 +50,7 @@ function build_grade_range_A_to_B(grades: Grade[]): [number, number] {
  */
 function super_students(grades: Grade[], students: Student[]): string[] {
   const passed_students: string[] = [];
-  const [lower_bound, upper_bound] = build_grade_range_A_to_B(grades);
+  const [lower_bound, upper_bound] = build_grade_bounds_A_to_B(grades);
 
   for (const student of students) {
     if (student.marks >= lower_bound && student.marks <= upper_bound) {
