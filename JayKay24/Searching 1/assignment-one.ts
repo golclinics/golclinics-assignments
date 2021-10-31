@@ -13,6 +13,7 @@ function findIdxs(nums: number[], target: number): TargetSumPair {
 
   for (let i = 0; i < nums.length; i++) {
     const current = nums[i];
+		
     if (seen.has(current)) {
       idxs[0] = seen.get(current);
       idxs[1] = i;
