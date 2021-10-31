@@ -20,6 +20,12 @@ class Student {
   }
 }
 
+/**
+ * Build and return lower and upper bounds of grades "A" to "B";
+ *
+ * @param grades - Grades to use to establish a valid range
+ * @returns Tuple containing lower and upper bounds of grade A to B
+ */
 function build_grade_range_A_to_B(grades: Grade[]): [number, number] {
   let lower_bound = 0,
     upper_bound = 0;
@@ -35,6 +41,13 @@ function build_grade_range_A_to_B(grades: Grade[]): [number, number] {
   return [lower_bound, upper_bound];
 }
 
+/**
+ * Return names of students who scored grades "A" and "B"
+ *
+ * @param grades - An array of grades each containing it's letter and it's lower and upper bound
+ * @param students - An array of students
+ * @returns Names of students who scored B and above
+ */
 function super_students(grades: Grade[], students: Student[]): string[] {
   const passed_students: string[] = [];
   const [lower_bound, upper_bound] = build_grade_range_A_to_B(grades);
