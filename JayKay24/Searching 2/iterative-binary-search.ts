@@ -23,4 +23,7 @@ function iterativeBinarySearch(nums: number[], target: number): number {
   return -1;
 }
 
+// Time - O(log(n))
+// Space - O(1)
+
 const numbers: number[] = [1, 3, 4, 5, 10, 11, 23, 50];
