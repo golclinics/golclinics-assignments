@@ -1,6 +1,6 @@
 /**
  * Returns idx of target, -1 if not found
- * @param nums - an array of integers
+ * @param nums - a sorted array of integers
  * @param target - integer to search for
  * @param leftIdx - left index used to calculate midpoint
  * @param rightIdx - right index used to calculate midpoint
