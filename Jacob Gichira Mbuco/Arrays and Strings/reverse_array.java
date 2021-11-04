@@ -1,8 +1,21 @@
 import java.util.*;
 public class reverse_array {
-     
-   
-    static void rvereseArray(
+     public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.println("Enter the number of elements in the array");
+        int n = input.nextInt();
+        int[] arr = new int[n];
+        System.out.println("Enter the elements of the array");
+        for(int i = 0; i < n; i++) {
+            arr[i] = input.nextInt();
+        }
+        for(int i = n-1; i >= 0; i--) {
+            System.out.print(arr[i] + " ");
+        }
+    }
+}
+   /*
+    static void  rvereseArray(
                     int start, int end)
     {
       
@@ -21,6 +34,6 @@ public class reverse_array {
       System.out.println(arr);
     }
 }
-
+*/
 
        
