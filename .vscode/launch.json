@@ -10,9 +10,9 @@
       "request": "launch",
       "preLaunchTask": "build",
       // If you have changed target frameworks, make sure to update the program path.
-      "program": "${workspaceFolder}/devKiratu/Stacks/bin/Debug/net5.0/Stacks.dll",
+      "program": "${workspaceFolder}/devKiratu/Stacks-and-Queues/bin/Debug/net5.0/Stacks.dll",
       "args": [],
-      "cwd": "${workspaceFolder}/devKiratu/Stacks",
+      "cwd": "${workspaceFolder}/devKiratu/Stacks-and-Queues",
       // For more information about the 'console' field, see https://aka.ms/VSCode-CS-LaunchJson-Console
       "console": "internalConsole",
       "stopAtEntry": false

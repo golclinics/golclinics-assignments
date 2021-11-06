@@ -7,7 +7,7 @@
       "type": "process",
       "args": [
         "build",
-        "${workspaceFolder}/devKiratu/Stacks/Stacks.csproj",
+        "${workspaceFolder}/devKiratu/Stacks-and-Queues/Stacks.csproj",
         "/property:GenerateFullPaths=true",
         "/consoleloggerparameters:NoSummary"
       ],
@@ -19,7 +19,7 @@
       "type": "process",
       "args": [
         "publish",
-        "${workspaceFolder}/devKiratu/Stacks/Stacks.csproj",
+        "${workspaceFolder}/devKiratu/Stacks-and-Queues/Stacks.csproj",
         "/property:GenerateFullPaths=true",
         "/consoleloggerparameters:NoSummary"
       ],
@@ -32,7 +32,7 @@
       "args": [
         "watch",
         "run",
-        "${workspaceFolder}/devKiratu/Stacks/Stacks.csproj",
+        "${workspaceFolder}/devKiratu/Stacks-and-Queues/Stacks.csproj",
         "/property:GenerateFullPaths=true",
         "/consoleloggerparameters:NoSummary"
       ],
