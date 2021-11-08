@@ -1,4 +1,6 @@
 using System.Collections.Generic;
+using System.Linq;
+
 namespace Searching
 {
   public class StudentMarks
@@ -26,20 +28,9 @@ namespace Searching
     
     public IEnumerable<string> GetSuperStudents()
     {
-      var superStudents = new List<string>();
-      foreach(var g in grades)
-      {
-        foreach(var s in students)
-        {
-          if(s.Marks >= g.Start && s.Marks <= g.To && g.GradeName == "A" || s.Marks >= g.Start && s.Marks <= g.To &&g.GradeName == "B")
-          {
-            superStudents.Add(s.Name);
-          }
-        }
-      }
-
-      return superStudents;
-
+      //Super students have scored B and above
+      var minScore = grades.Find(g => g.GradeName == "B").Start;
+      return students.Where(s => s.Marks >= minScore).Select(s => s.Name);
     }
   }
 
