@@ -18,7 +18,7 @@ namespace Searching
             var superStudents = studentMarks.GetSuperStudents();
             foreach(var s in superStudents)
             {
-              Console.WriteLine($"{s.Name}, {s.Marks}");
+              Console.Write($"{s},");
             }
         }
     }

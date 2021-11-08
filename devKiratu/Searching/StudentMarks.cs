@@ -24,16 +24,16 @@ namespace Searching
       new Student("Jane", 82)
     };
     
-    public IEnumerable<Student> GetSuperStudents()
+    public IEnumerable<string> GetSuperStudents()
     {
-      var superStudents = new List<Student>();
+      var superStudents = new List<string>();
       foreach(var g in grades)
       {
         foreach(var s in students)
         {
           if(s.Marks >= g.Start && s.Marks <= g.To && g.GradeName == "A" || s.Marks >= g.Start && s.Marks <= g.To &&g.GradeName == "B")
           {
-            superStudents.Add(s);
+            superStudents.Add(s.Name);
           }
         }
       }
