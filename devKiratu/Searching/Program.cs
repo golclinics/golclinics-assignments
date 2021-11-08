@@ -12,7 +12,14 @@ namespace Searching
             var target = 9;
             var indices = twoIndices.AddUpToTarget(nums, target);
 
-            Console.WriteLine($"Array: [{string.Join(",", nums)}], targetSum: {target}, indices: [{string.Join(",", indices)}]");
+            // Console.WriteLine($"Array: [{string.Join(",", nums)}], targetSum: {target}, indices: [{string.Join(",", indices)}]");
+
+            var studentMarks = new StudentMarks();
+            var superStudents = studentMarks.GetSuperStudents();
+            foreach(var s in superStudents)
+            {
+              Console.WriteLine($"{s.Name}, {s.Marks}");
+            }
         }
     }
 }
