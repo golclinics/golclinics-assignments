@@ -14,14 +14,14 @@
 # 	Output: 6
 def scoreOfParenthesis(s):
     stack = []
-    count=0
+    score=0
     for bracket in s:
         if bracket == '(':
-            stack.append(bracket)
-        if bracket == ')':
-            stack.pop()
-            count+=1
-    return count
+            stack.append(score)
+            score = 0
+        else:
+            score = stack.pop() + max(2*score,1)
+    return score
 if __name__ == '__main__':
     ss = ["()","(())","()()","(()(()))"]
     for s in ss:
