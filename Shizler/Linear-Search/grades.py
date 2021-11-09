@@ -37,7 +37,8 @@ def super_students(grades,students):
     names = []
     count = 0
     for student in students:
-        if (student.marks in range(grades[0].start,grades[0].to)) or (student.marks in range(grades[1].start,grades[1].to)):
+        if (student.marks in range(grades[0].start,(grades[0].to + 1))) or \
+           (student.marks in range(grades[1].start,(grades[1].to + 1))):
             names.append(student.name)
 
     return names
