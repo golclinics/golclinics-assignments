@@ -36,6 +36,6 @@ public class reverse_array {
       System.out.println(arr);
     }
 }
-*/
 
-       
+
+       */
