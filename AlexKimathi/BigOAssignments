@@ -1,0 +1,23 @@
+def countdown(n):
+    while n > 0:
+        print(n)
+        n -= 1
+    print("Blast off!")
+    countdown(10)
+    
+    #count down
+    # time complexity 0(n) 
+
+    #space complexity 0(1) its a constant and no auxilliary memory is required
+
+    #count down recuersive
+    #time complexity O(n) the countdown will be called as many times as thes ize of n
+
+    #palindrome
+    #the output is True
+    #time complexity O(n) countdown will be called n times
+    # space complexity o(n)
+
+    #reversed palindrome
+    #time complexity o(s) reversal is dependent on size of s
+     # space complexity o(s)
