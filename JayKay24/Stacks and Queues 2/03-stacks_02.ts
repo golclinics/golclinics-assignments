@@ -55,3 +55,41 @@ function balancedBrackets(brackets: string): string {
 
   return stack.empty ? balancedState.BALANCED : balancedState.UNBALANCED;
 }
+
+/**
+ * A Stack with overflow logic implemented
+ */
+class OverFlow {
+  private nums: number[];
+  private defaultValue = Infinity;
+  private top = 0;
+
+  constructor(initialSize = 5) {
+    this.nums = new Array(initialSize).fill(this.defaultValue);
+  }
+
+  private stackIsFull() {
+    return this.top >= this.nums.length;
+  }
+
+  get size() {
+    return this.nums.length;
+  }
+
+  push(val: number): void {
+    if (this.stackIsFull()) {
+      console.log("Stack overflow");
+
+      const prevValues = [...this.nums];
+
+      // reduce stack overflows by squaring the size of full stack
+      const newArr = new Array(
+        this.size === 1 ? this.size * 2 : this.size ** 2
+      ).fill(this.defaultValue);
+
+      this.nums = [...prevValues, ...newArr];
+    }
+
+    this.nums[this.top++] = val;
+  }
+}
