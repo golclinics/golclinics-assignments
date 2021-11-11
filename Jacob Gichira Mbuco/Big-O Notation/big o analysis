@@ -45,11 +45,11 @@ def countdown(n): #this is the function that will call itself n times time compl
     #overall space complexity is 0(1) becasue we are not using any extra space 
 4.1 
 def is_palindrome_rev2(s):
-    reversed_seq = reversed(s)#O(n) # creates a sequence with the characters in the string in reverse 
-    reversed_s = ''.join(reversed_seq)#0(1) # transformed the reversed sequence into a string 
-    return s == reversed_s #O (1)
-  #  space complexity------------------------------O(n) space complexity grows linearly
-  #  time complexity --------------------------------O(n) time complexity grows linearly
+    reversed_seq = reversed(s)#this line is to reverse the string time complexity O(n) and space complexity O(1)
+    reversed_s = ''.join(reversed_seq)#this line is to join the reversed string time complexity O(n) and space complexity O(1)
+    return s == reversed_s #this line is to check if the string is palindrome time complexity O(n) and space complexity O(1)
+  #  overall time complexity is 0(n) because it is iterating through the string n times
+  #  overall spacce complexity is 0(n) because it is creating a new variable n times
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 5. palindrome using recursion
 def is_palindrome_recur(s):#function to check if a string is palindrome time complexity O(n) and space complexity O(n)
@@ -61,5 +61,8 @@ def is_palindrome_recur(s):#function to check if a string is palindrome time com
         return s[0] == s[-1] and is_palindrome_recur(s[1:-1])#recursive call to check if string is palindrome time complexity O(n) and space complexity O(n)
         #overall time complexity is 0(n) because the function is called n times
         #overall space complexity is 0(n) because we create n new variables
-        #quick sort time complexity is O(n log n) because it is called n times and each time it will be called n times so the total time complexity is O(n log n)
-#
+         
+         #Between is_palindrome, is_palindrome_rev and is_palindrome_recur which do you think is more efficient, and why?
+            #is_palindrome and is_palindrome_rev are both O(n) time  and O(1) space so they are both more efficient than is_palindrome_recur because they use less space of 0(1)
+            #Which of the two implementations(is_palindrome and is_palindrome_rev) would you prefer for your own code, and why? 
+            #i would prefer is_palindrome_rev because they both have the same time and space complexity but is_palindrome has few lines of code to exeute so i think it will take lesser time to compile and execute
