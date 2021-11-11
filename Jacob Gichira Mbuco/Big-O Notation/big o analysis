@@ -61,3 +61,5 @@ def is_palindrome_recur(s):#function to check if a string is palindrome time com
         return s[0] == s[-1] and is_palindrome_recur(s[1:-1])#recursive call to check if string is palindrome time complexity O(n) and space complexity O(n)
         #overall time complexity is 0(n) because the function is called n times
         #overall space complexity is 0(n) because we create n new variables
+        #quick sort time complexity is O(n log n) because it is called n times and each time it will be called n times so the total time complexity is O(n log n)
+#
