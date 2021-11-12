@@ -82,10 +82,8 @@ class OverFlow {
 
       const prevValues = [...this.nums];
 
-      // reduce stack overflows by squaring the size of full stack
-      const newArr = new Array(
-        this.size === 1 ? this.size * 2 : this.size ** 2
-      ).fill(this.defaultValue);
+      // reduce printing out "Stack overflow" by doubling the size of full stack
+      const newArr = new Array(this.size * 2).fill(this.defaultValue);
 
       this.nums = [...prevValues, ...newArr];
     }
