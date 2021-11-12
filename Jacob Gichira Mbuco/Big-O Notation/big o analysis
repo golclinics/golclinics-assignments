@@ -66,3 +66,4 @@ def is_palindrome_recur(s):#function to check if a string is palindrome time com
             #is_palindrome and is_palindrome_rev are both O(n) time  and O(1) space so they are both more efficient than is_palindrome_recur because they use less space of 0(1)
             #Which of the two implementations(is_palindrome and is_palindrome_rev) would you prefer for your own code, and why? 
             #i would prefer is_palindrome_rev because they both have the same time and space complexity but is_palindrome has few lines of code to exeute so i think it will take lesser time to compile and execute
+
