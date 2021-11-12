@@ -80,12 +80,10 @@ class OverFlow {
     if (this.stackIsFull()) {
       console.log("Stack overflow");
 
-      const prevValues = [...this.nums];
-
       // reduce printing out "Stack overflow" by doubling the size of full stack
       const newArr = new Array(this.size * 2).fill(this.defaultValue);
 
-      this.nums = [...prevValues, ...newArr];
+      this.nums = [...this.nums, ...newArr];
     }
 
     this.nums[this.top++] = val;
