@@ -1,0 +1,69 @@
+1.Countdown
+def countdown(n): #this is the function that will call itself n times time complexity is O(n) and space complexity is O(n) because it will call itself n times
+    while n > 0: # while loop to count down from n to 0 time complexity of this is O(n) and space complexity is O(1) becasue it will only run once
+        print(n)# print n time complexity of this is O(1) and space complexity is O(1) because it will only run once
+        n -= 1 #does the same thing as n = n - 1 time complexity of this is O(1) and space complexity is O(1) becasue it will only run once
+    print("Blast off!") # print blast off time complexity of this is O(1) and space complexity is O(1) because it will only run once
+    #time complexity of this is O(n) reason the loop is executed n times and the print is executed n times so the total time complexity is O(n) and take the worst case scenario where n is the largest number in the list
+    # space complexity is O(1) because we are not creating any new variables so the space complexity is O(1) 
+     
+    
+    >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+  2. Countdown recursive
+       def countdown_recursive(n):#n is the number of times the function will run it will run until it reaches 0 from the number given 
+                            #time complexity is O(n) and space complexity is O(n) reason for this is because the function will call itself n times
+    if n == 0:#the if statement will run if the number is 0 time complexity is O(1) and space complexity is O(1) because it will only run once
+        print("Blast off")#print blast off time complexity is O(1) and space complexity is O(1) because it will only run once 
+    else:
+        print(n) #print the number time complexity is O(1) and space complexity is O(1) because it will only run once
+        countdown_recursive(n - 1)#the function will call itself n-1 times time complexity is O(n) and space complexity is O(n) because it will call itself n-1 times 
+        #overall space complexity is O(n) because it will create a new variable n-1 times and the print is executed n times so the total space complexity is O(n)
+        #overall time complexity is O(n) because it will call itself n-1 times and the print is executed n times so the total time complexity is O(n) 
+        
+     >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>   
+ 3. #Palindrome
+ def is_palindrome(s):#function to check if the string is palindrome or not time complexity O(n) because it is iterating through the string n times and the space complexity is O(1) because it is storing the string in a variable
+    if len(s) == 0:#check if the string is empty or not time complexity O(1) because it is checking the length of the string once and the space complexity is O(1) 
+        return True   #return true if the string is empty time complexity O(1) because it is returning the value only once 
+
+    size = len(s) #size is the length of the string time complexity O(1) and space complexity 0(1)
+    midpoint = size // 2 #midpoint is the midpoint of the string time complexity O(1) and space complexity 0(1)
+    
+    for i in range(midpoint + 1): #iterate through the string time complexity O(n) and space complexity O(1)
+        if s[i] != s[size - i - 1]#check if the string is palindrome or not time complexity O(1) and space complexity O(1)
+            return False#return false if the string is not palindrome time complexity O(1) and space complexity O(1)
+    return True#return true if the string is palindrome time complexity O(1) and space complexity O(1)
+    #overall time complexity is 0(n) because it is iterating through the string n times
+    #overall space complexity is 0(1) because it is storing the string in a variable 
+    >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+ 4. Palindrome using reversed string   
+ def is_palindrome_rev(s):
+    def is_palindrome_rev(s):#function to check palindrome using reversed string time complexity O(n) and space complexity O(1)
+    reversed_s = s[::-1]  #this line is to reverse the string time complexity O(n) and space complexity O(1)
+    return s == reversed_s // 2 #this line is to check if the string is palindrome time complexity O(n) and space complexity O(1)
+    #overall time complexity is 0(n) because time grows linearly with the size of the string
+    #overall space complexity is 0(1) becasue we are not using any extra space 
+4.1 
+def is_palindrome_rev2(s):
+    reversed_seq = reversed(s)#this line is to reverse the string time complexity O(n) and space complexity O(1)
+    reversed_s = ''.join(reversed_seq)#this line is to join the reversed string time complexity O(n) and space complexity O(1)
+    return s == reversed_s #this line is to check if the string is palindrome time complexity O(n) and space complexity O(1)
+  #  overall time complexity is 0(n) because it is iterating through the string n times
+  #  overall spacce complexity is 0(n) because it is creating a new variable n times
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+5. palindrome using recursion
+def is_palindrome_recur(s):#function to check if a string is palindrome time complexity O(n) and space complexity O(n)
+    if len(s) == 0: # base case to stop recursion when string is empty time complexity O(1) and space complexity O(1)
+        return True #return true if string is empty
+    if len(s) == 1: #base case to stop recursion when string is of length 1 time complexity O(1) and space complexity O(1)
+        return True#return true if string is of length 1 time complexity O(1) and space complexity O(1)
+
+        return s[0] == s[-1] and is_palindrome_recur(s[1:-1])#recursive call to check if string is palindrome time complexity O(n) and space complexity O(n)
+        #overall time complexity is 0(n) because the function is called n times
+        #overall space complexity is 0(n) because we create n new variables
+         
+         #Between is_palindrome, is_palindrome_rev and is_palindrome_recur which do you think is more efficient, and why?
+            #is_palindrome and is_palindrome_rev are both O(n) time  and O(1) space so they are both more efficient than is_palindrome_recur because they use less space of 0(1)
+            #Which of the two implementations(is_palindrome and is_palindrome_rev) would you prefer for your own code, and why? 
+            #i would prefer is_palindrome_rev because they both have the same time and space complexity but is_palindrome has few lines of code to exeute so i think it will take lesser time to compile and execute
+
