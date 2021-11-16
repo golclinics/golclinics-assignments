@@ -9,9 +9,9 @@ function isSorted(integers: number[], ascending = true): boolean {
   for (let i = 0; i < integers.length; i++) {
     if (i > 0) {
       if (ascending) {
-        if (integers[i] > integers[i + 1]) return false;
+        if (integers[i] < integers[i - 1]) return false;
       } else {
-        if (integers[i + 1] > integers[i]) return false;
+        if (integers[i] > integers[i - 1]) return false;
       }
     }
   }
