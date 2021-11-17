@@ -1,4 +1,26 @@
 /**
+ * Performs mergesort on the array
+ *
+ * @param array - an array of integers
+ *
+ * @returns sorted array of integers
+ */
+function mergeSort(array: number[]): number[] {
+  if (array.length < 2) return array;
+
+  let midIdx = Math.floor(array.length / 2),
+    leftArray = array.slice(0, midIdx),
+    rightArray = array.slice(midIdx);
+
+  return merge(mergeSort(leftArray), mergeSort(rightArray));
+}
+
+/**
+ * Time - O(nLog(n))
+ * Space - O(n)
+ */
+
+/**
  * Merges leftArr and rightArr and sorts the result
  *
  * @param leftArr - an array of integers
@@ -24,25 +46,3 @@ function merge(leftArr: number[], rightArr: number[]): number[] {
 
   return [...results, ...leftRemains, ...rightRemains];
 }
-
-/**
- * Performs mergesort on the array
- *
- * @param array - an array of integers
- *
- * @returns sorted array of integers
- */
-function mergeSort(array: number[]): number[] {
-  if (array.length < 2) return array;
-
-  let midIdx = Math.floor(array.length / 2),
-    leftArray = array.slice(0, midIdx),
-    rightArray = array.slice(midIdx);
-
-  return merge(mergeSort(leftArray), mergeSort(rightArray));
-}
-
-/**
- * Time - O(nLog(n))
- * Space - O(n)
- */
