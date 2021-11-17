@@ -26,3 +26,8 @@ function insertionSort(array: number[]): number[] {
 
   return array;
 }
+
+/**
+ * Time - O(n ^ 2)
+ * Space - O(1)
+ */
