@@ -1,5 +1,6 @@
 /**
  * Determine if a collection is sorted
+ *
  * @param integers - an array of integers
  * @param ascending - order criteria, true for ascending, false for descending
  *
