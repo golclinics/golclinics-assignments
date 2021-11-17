@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 namespace Sorting
 {
@@ -19,6 +20,18 @@ namespace Sorting
                 }
             }
             return results.Count == array.Length-1;
+        }
+
+        /*
+            Assignment two: How do you swap two numbers 
+            (Implement a function to swap two numbers)
+        */
+        public Tuple<int, int> SwapTwoNumbers(int a, int b)
+        {
+            var temp = a;
+            a = b;
+            b = temp;
+            return Tuple.Create(a,b);
         }
     }
 }
