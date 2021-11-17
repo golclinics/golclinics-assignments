@@ -18,4 +18,9 @@ function isSorted(integers: number[], ascending = true): boolean {
 
   return true;
 }
+/**
+ * Time - O(n)
+ * Space - O(1)
+ */
+
 // is an empty list, by definition, sorted?
