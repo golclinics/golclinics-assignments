@@ -11,15 +11,15 @@ namespace Sorting
       */
         public bool IsSorted(int[] array)
         {
-            var results = new List<bool>();
+            var results = 0;
             for(var i = 1; i < array.Length; i++)
             {
                 if (array[i] >= array[i-1])
                 {
-                    results.Add(true);
+                    results++;
                 }
             }
-            return results.Count == array.Length-1;
+            return results == array.Length-1;
         }
 
         /*
