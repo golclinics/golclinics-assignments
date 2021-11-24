@@ -1,4 +1,5 @@
 import { Comparator, LessThan } from "./comparator";
+import { Person } from "./assignment-1";
 
 /**
  * Perform insertion sort on the array
@@ -9,10 +10,10 @@ import { Comparator, LessThan } from "./comparator";
  * @returns Sorted array
  */
 export function insertionSort<T>(
-  array: T[],
+  array: Person[],
   prop: string,
-  comparator: Comparator<T> = new LessThan()
-): T[] {
+  comparator: Comparator = new LessThan()
+): Person[] {
   let currentIdx = 1;
 
   while (currentIdx < array.length) {
@@ -21,7 +22,7 @@ export function insertionSort<T>(
 
     while (i > 0 && !placeFound) {
       if (comparator.compare(array, i, i - 1, prop)) {
-        swap<T>(array, i, i - 1);
+        swap(array, i, i - 1);
         i--;
       } else {
         placeFound = true;
@@ -37,10 +38,10 @@ export function insertionSort<T>(
 /**
  * Swap two items in the array
  *
- * @param array - an array of items
+ * @param array - an array of Person objects
  * @param idx1 swap array[idx1] with array[idx2]
  * @param idx2 swap array[idx2] with array[idx1]
  */
-export function swap<T>(array: T[], idx1: number, idx2: number): void {
+export function swap(array: Person[], idx1: number, idx2: number): void {
   [array[idx2], array[idx1]] = [array[idx1], array[idx2]];
 }

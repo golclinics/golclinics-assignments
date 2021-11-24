@@ -33,7 +33,7 @@ const people = [
 function sort_people(
   people: Person[],
   prop: string,
-  comparator: Comparator<Person>
+  comparator: Comparator
 ): Person[] {
   return insertionSort(people, prop, comparator);
 }
