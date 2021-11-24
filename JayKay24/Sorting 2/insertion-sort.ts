@@ -9,7 +9,7 @@ import { Person } from "./assignment-1";
  *
  * @returns Sorted array
  */
-export function insertionSort<T>(
+export function insertionSort(
   array: Person[],
   prop: string,
   comparator: Comparator = new LessThan()
