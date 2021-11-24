@@ -33,5 +33,27 @@ namespace Sorting
             b = temp;
             return Tuple.Create(a,b);
         }
+
+        /*
+            Implement Insertion Sort
+            array = [3,5,2,1,4]
+        */
+        public int[] InsertionSort(int[] array)
+        {
+            for (var i = 1; i < array.Length; i++)
+            {
+                var currentItem = array[i];
+                int j = i-1;
+                while(j >= 0 && array[j] > currentItem)
+                {
+                    array[j+1] = array[j];
+                    j--;
+                }
+
+                array[j + 1] = currentItem;
+            }
+
+            return array;
+        }
     }
 }

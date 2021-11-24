@@ -15,12 +15,15 @@ namespace Sorting
             Console.WriteLine($"Is [{string.Join(",",arr1)}] sorted? {sorting.IsSorted(arr1)}");
             Console.WriteLine($"Is [{string.Join(",",arr2)}] sorted? {sorting.IsSorted(arr2)}");
 
-            //Assignment Two
+            // Assignment Two
             var a = 3;
             var b = 7;
             var result = sorting.SwapTwoNumbers(a, b);
 
             Console.WriteLine($"Swap a:{a}, b:{b} => a:{result.Item1}, b:{result.Item2}");
+
+            //Assignment Three 
+            Console.WriteLine($"[{string.Join(",", arr1)}] insertion-sorted => [{string.Join(",",sorting.InsertionSort(arr1))}]");
         }
     }
 }
