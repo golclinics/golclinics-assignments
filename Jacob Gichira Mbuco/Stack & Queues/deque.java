@@ -1,5 +1,6 @@
 
 //Implement a deque
+//what does this program do 
 class Deque {
     private int[] arr;
     private int size;
